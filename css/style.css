@@ -285,7 +285,7 @@ main h2 span {
 	display: block;
 	font-weight: normal;
 	color: #777;		/*文字色*/
-	font-size: 13px;	/*文字サイズ*/
+	font-size: 18px;	/*文字サイズ*/
 }
 
 /*mainブロック内のh3タグ*/
@@ -734,7 +734,7 @@ a.btn1 i, a.btn2 i {
 /*全体の設定
 ---------------------------------------------------------------------------*/
 html, body {
-	font-size: 15px;	/*基準となるフォントサイズの上書き*/
+	font-size: 18px;	/*基準となるフォントサイズの上書き*/
 }
 
 
