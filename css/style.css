@@ -272,7 +272,7 @@ main {
 main h2 {
 	margin: 0 0 1em;		/*上、左右、下へのタグの外にとるスペース*/
 	line-height: 1.5;		/*行間を少し狭く*/
-	font-size: 3em;			/*文字サイズ。3倍。*/
+	font-size: 2em;			/*文字サイズ。2倍。*/
 	text-align: center;		/*文字をセンタリング*/
 	letter-spacing: 0.2em;	/*文字間隔を少しだけ広くとる設定*/
 	color: #e58882;			/*文字色*/
