@@ -694,7 +694,7 @@ a:hover.btn1, a:hover.btn2 {
 .color-theme, .color-theme a {color: #e58882 !important;}
 .color-check, .color-check a {color: #f00 !important;}
 .c {text-align: center !important;}
-.ws {width: 95%;display: block;background-color:#f2d5d5;border: none;}
+.ws {width: 95%;display: block;background-color:#f2d5d5;border: none;height:40px;}
 .wl {width: 95%;display: block;background-color:#f2d5d5;border: none;}
 .mb30 {margin-bottom: 30px !important;}
 .mt30 {margin-top: 30px !important;}
