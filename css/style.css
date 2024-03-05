@@ -326,8 +326,8 @@ footer .pr {display: block;}
 #footermenu {
 	background: #333;	/*背景色*/
 	color: #999;		/*文字色*/
-	font-size: 0.7em;	/*文字サイズ*/
-	padding: 20px;		/*ボックス内の余白*/
+	font-size: 0.8em;	/*文字サイズ*/
+	padding: 5% 20%;	/*ボックス内の余白*/
 	display: flex;		/*flexボックスを使う指定*/
 	justify-content: space-between;	/*並びかたの種類の指定*/
 	align-items: flex-start;		/*垂直揃えの指定。上に配置されるように。*/
