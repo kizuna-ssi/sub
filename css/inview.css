@@ -16,7 +16,7 @@
 ---------------------------------------------------------------------------*/
 .upstyle, .downstyle, .leftstyle, .rightstyle, .transform1style, .transform2style {
 	opacity: 1;				/*透明度（色が100%出た状態）*/
-	transition: 1s 0.1s;	/*1sはアニメーションの実行時間1.5秒。0.5sは0.5秒遅れてスタートする指定。*/
+	transition: 0.5s 0.1s;	/*1sはアニメーションの実行時間1.5秒。0.5sは0.5秒遅れてスタートする指定。*/
 }
 
 
@@ -112,7 +112,7 @@
 	opacity: 1;
 	filter: blur(0);
 	transform: scale(1);
-	transition: 1s 0.5s;
+	transition: 0.5s 0.1s;
 }
 
 
