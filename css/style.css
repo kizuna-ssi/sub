@@ -325,7 +325,7 @@ footer .pr {display: block;}
 /*ボックス全体の設定*/
 #footermenu {
 	background: #333;	/*背景色*/
-	color: #999;		/*文字色*/
+	color: #fff;		/*文字色*/
 	font-size: 0.8em;	/*文字サイズ*/
 	padding: 20px;	/*ボックス内の余白*/
 	display: flex;		/*flexボックスを使う指定*/
@@ -336,12 +336,11 @@ footer .pr {display: block;}
 /*ボックス内のリンクテキスト設定*/
 #footermenu a {
 	text-decoration: none;
-	color: #fff;	/*文字色*/
 }
 
 /*リンクテキストのマウスオン時*/
 #footermenu a:hover {
-	color: #333;	/*文字色*/
+	text-decoration: underline;
 }
 
 /*ulタグ（メニューの列単位）*/
