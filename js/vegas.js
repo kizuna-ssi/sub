@@ -1,5 +1,5 @@
 $(function() {
-    $('#mainimg').vegas({
+    $('#mainimg2').vegas({
         slides: [
             { src: './images/1.jpg' },	//1枚目の写真指定
             { src: './images/2.jpg' },	//2枚目の写真指定
