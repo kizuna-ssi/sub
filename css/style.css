@@ -529,7 +529,7 @@ dl.line dd {
 .faq {
 	padding: 0 5px;	/*上下、左右へのボックス内の余白*/
 	width: 100%;
-	min-width: 800px;
+	max-width: 800px;
 	margin: auto;
 }
 
