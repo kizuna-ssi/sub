@@ -975,3 +975,21 @@ a.btn--shadow {
   text-align: center;
   margin: 30px auto; 
 }
+
+/*スライドショー（vegasを使用）
+ここでは、20:9の画像比率（9÷20=0.45）を読み込む指定を行なっています。
+異なる画像比率にしたい場合、#mainimg-boxのpadding-topの数字を変更します。もし2:1にするなら50%です。
+---------------------------------------------------------------------------*/
+#mainimg-box {
+	width: 100%;
+	height: 0;
+	padding-top: 45%;
+	position: relative;z-index: -1;
+}
+#mainimg {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
