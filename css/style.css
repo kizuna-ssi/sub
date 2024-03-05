@@ -988,3 +988,28 @@ a.btn--shadow {
         display: block;
     }
 }
+form .formbottom {
+	text-align: center;
+} 
+form .btns{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 10px;
+	padding: 6px 25px;
+	color: #F15A24;
+	font-weight: bold;
+	letter-spacing: 0.5pt;
+	text-decoration: none;
+	background-color: #ffffff;
+	border: 1px solid #F15A24;
+	cursor: pointer;
+	transition-duration:0.3s;
+    -webkit-transition-duration:0.3s;
+    -moz-transition-duration:0.3s;
+    -o-transition-duration:0.3s;
+    -ms-transition-duration:0.3s;
+} 
+form .btns:hover{
+    color: #ffffff;
+    background-color: #F15A24;
+}
