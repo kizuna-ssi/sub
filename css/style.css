@@ -645,8 +645,8 @@ a:hover.btn1, a:hover.btn2 {
 
 /*th（左側）のみの設定*/
 .ta1 th {
-	width: 40%;			/*幅*/
-	text-align: left;	/*左よせにする*/
+	width: 30%;			/*幅*/
+	text-align: center;	/*中央よせにする*/
 }
 
 
@@ -920,7 +920,7 @@ html, body {
 
 /*th（左側）のみの設定*/
 .ta1 th {
-	width: 20%;		/*幅*/
+	width: 30%;		/*幅*/
 }
 
 
