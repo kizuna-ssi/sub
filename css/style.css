@@ -528,6 +528,9 @@ dl.line dd {
 /*FAQボックス全体*/
 .faq {
 	padding: 0 5px;	/*上下、左右へのボックス内の余白*/
+	width: 80%;
+	min-width: 800px;
+	margin: auto;
 }
 
 /*質問*/
