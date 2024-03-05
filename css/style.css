@@ -336,11 +336,13 @@ footer .pr {display: block;}
 /*ボックス内のリンクテキスト設定*/
 #footermenu a {
 	text-decoration: none;
+	color: #fff;
 }
 
 /*リンクテキストのマウスオン時*/
 #footermenu a:hover {
 	text-decoration: underline;
+	color: #fff;
 }
 
 /*ulタグ（メニューの列単位）*/
