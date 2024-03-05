@@ -327,6 +327,7 @@ footer .pr {display: block;}
 	background: #333;	/*背景色*/
 	color: #999;		/*文字色*/
 	font-size: 0.8em;	/*文字サイズ*/
+	font-weight: bold;
 	padding: 20px;	/*ボックス内の余白*/
 	display: flex;		/*flexボックスを使う指定*/
 	justify-content: space-between;	/*並びかたの種類の指定*/
