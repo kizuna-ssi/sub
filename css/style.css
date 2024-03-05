@@ -977,4 +977,11 @@ a.btn--shadow {
   text-align: center;
   margin: 30px auto; 
 }
-
+.br-sp {
+    display: none;
+}
+@media (max-width: 900px) {
+    .br-sp {
+        display: block;
+    }
+}
