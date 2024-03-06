@@ -99,6 +99,21 @@ main > article {
 	order: -1;
 }
 
+.c3 {
+	display: flex;			/*flexボックスを使う指定*/
+	flex-direction: column;	/*子要素を縦並びにする*/
+}
+
+/*c3内のh2見出し*/
+.c3 h2 {
+	font-size: 2em;
+}
+
+/*小さい端末で見た場合（１カラムになった際）に、画像を常に先頭に持ってくる*/
+.c3 .image {
+	order: -1;
+}
+
 
 /*header（ロゴなどが入った最上段のブロック）
 ---------------------------------------------------------------------------*/
@@ -784,6 +799,45 @@ html, body {
 	/*margin-left: -6%;	画像を画面枠ギリギリまで移動する*/
 	border-radius: 0px 100px 100px 0px;	/*角を丸くする指定。左上、右上、右下、左下への順番。*/
 }
+
+.c3 {
+	flex-direction: row;			/*子要素を横並びにする*/
+	justify-content: start;	/*並びかたの種類の指定*/
+	align-items: center;			/*垂直揃えの指定。天地中央に配置されるように。*/
+	
+	margin-left: -6%;
+	margin-right: -6%;
+}
+/*画像ブロック*/
+.c3 .image {
+	width: 60%;
+}
+
+/*テキストブロック*/
+.c3 .text {
+	width: 40%;
+	padding: 0 3%;
+}
+
+/*最初(左)に配置*/
+.c3 .l {
+	order: -1;
+}
+
+/*画像を右側に配置する場合の設定*/
+.c3 .image.r {
+	overflow: hidden;
+	/*margin-right: -6%;	画像を画面枠ギリギリまで移動する*/
+	border-radius: 100px 0px 0px 100px;	/*角を丸くする指定。左上、右上、右下、左下への順番。*/
+}
+
+/*画像を左側に配置する場合の設定*/
+.c3 .image.l {
+	overflow: hidden;
+	/*margin-left: -6%;	画像を画面枠ギリギリまで移動する*/
+	border-radius: 0px 100px 100px 0px;	/*角を丸くする指定。左上、右上、右下、左下への順番。*/
+}
+	
 
 
 /*トップページのメイン画像
