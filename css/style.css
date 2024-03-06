@@ -1032,3 +1032,41 @@ form .btns:hover{
    font-weight : bold;
    text-align: center;
 }
+
+  .tooltip1{
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+  .tooltip1 p{
+    margin:0;
+    padding:0;
+}
+
+  .tooltip1:hover .description1{
+    display: inline-block;
+    top: -135px;
+    left: -70px;
+}
+
+  .checkhelp {
+  display: none;
+}
+
+  .helpbutton:after{
+   content: "?";
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   text-align: center;
+   line-height: 1.4;
+   color: #B9454B;
+   border: solid;
+   font-weight: bold;
+}
+
+  .helpbutton:hover {
+   cursor: pointer;
+}
