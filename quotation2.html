@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>きずな少額短期保険</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+  <meta name="description" content="きずな少額短期保険">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="きずな少額短期保険"></a></h1>
+
+<!--メニュー-->
+<div id="menubar">
+  <nav>
+    <ul>
+      <li><a href="index.html">トップ</a></li>
+      <li><a href="insurance.html">きずなの死亡保険</a></li>
+      <li><a href="company.html">会社情報</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+    </ul>
+  </nav>
+</div>
+<!--/#menubar-->
+    
+    </header>
+
+<main>
+
+<section>
+
+<h2>QUOTATION<span>お見積り</span></h2>
+
+  <form class="form">
+    <div class="center">
+      <span style="font-size: 1.5em; font-weight: bold; color: #0D955A;">保険金額固定コース</span>
+    </div>
+  
+  <table class="ta1">
+    <tr>
+      <th>生年月日</th>
+       <td>
+      <div class="form-select-wrap">
+         <select class="birthday-year" onchange="calculate()" style="width: 180px;"></select>年
+      </div>
+      <div class="form-select-wrap">
+         <select class="birthday-month" onchange="calculate()"></select>月
+         <select class="birthday-day" onchange="calculate()"></select>日
+      </div>
+      </td>
+    </tr>
+    <tr>
+      <th>性別</th>
+      <td>
+        <div class="radio01">
+        <input type="radio" id="male" name="gender" onchange="calculate()" value="1" checked><label for="male">男性</label>
+        <input type="radio" id="female" name="gender" onchange="calculate()" value="2"><label for="female">女性</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th>保険金額</th>
+      <td>
+        <div class="radio01">
+        <input type="radio" id="50" name="amount" onchange="calculate()" value="0" checked><label for="50">50万円</label>
+        <input type="radio" id="100" name="amount" onchange="calculate()" value="1"><label for="100">100万円</label>
+        <input type="radio" id="200" name="amount" onchange="calculate()" value="2"><label for="200">200万円</label>
+       <input type="radio" id="300" name="amount" onchange="calculate()" value="3"><label for="300">300万円</label>
+        </div>
+     </td>
+    </tr>
+    <tr>
+      <th>払込回数</th>
+      <td>
+        <div class="radio01">
+        <input type="radio" id="month" name="times" onchange="calculate()" value="1" checked><label for="month">月払</label>
+        <input type="radio" id="year" name="times" onchange="calculate()" value="2"><label for="year">年払</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+     <th>保険料</th>
+     <td>
+       <div class="c3">
+         <div style="display:none"><input id="premium" type="text" readonly=""></div>
+         <div id="product" type="text" readonly="" style="font-size: 150%; color: #e58882; font-weight: bold;"></div>
+         <div id="ageDisplay1" type="text" readonly=""></div>
+         <div style="display:none"><div id="ageDisplay2" type="text" readonly=""></div>
+       </div>
+     </td>
+    </tr>
+   </table>
+
+  <div class="center">
+    <a href="quotation1.html" class="btn btn--orange btn--cubic btn--shadow">保険料定額コースはこちら</a>
+  </div>
+    
+ </form>
+
+</section>
+
+</main>
+    
+<div id="footermenu">
+<ul>
+<li><a href="index.html"><img src="images/logo.png" alt="きずな少額短期保険" style="width: 70%;"></a></li>
+</ul>
+<ul>
+<li><a href="index.html">トップ</a></li>
+<li><a href="insurance.html">きずなの死亡保険</a></li>
+<li><a href="company.html">会社情報</a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="contact.html">お問い合わせ</a></li>
+</ul>
+<ul>
+<li><a href="#">各種方針</a></li>
+<li><a href="#">契約者様へ</a></li>
+<li><a href="#">代理店様へ</a></li>
+<li><a href="#">サイトマップ</a></li>
+<li><a href="#">外部リンク</a></li>
+</ul>
+</div>
+<!--/#footermenu-->
+
+<footer>
+
+<small>Copyright 2024 KIZUNA Small Amount and Short Term Insurance Co., Ltd.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+
+</footer>
+
+</div>
+<!--/#container-->
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="js/main.js"></script>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span><span></span>
+</div>
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="js/jquery.inview_set.js"></script>
+
+<!--スライドショー（slick）-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/slick.js"></script>
+
+<script src="js/calculate_age.js"></script>
+<script src="js/premium.js"></script>
+  
+</body>
+  
+
+</html>
