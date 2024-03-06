@@ -38,9 +38,9 @@ function calculateAge() {
   if (isNaN(age)) {
     ageDisplay1.textContent = `-`;
   } else {
-    ageDisplay1.textContent = `${age} 歳`;
+    ageDisplay1.textContent = `契約年齢：${age} 歳`;
   }
-  ageDisplay2.textContent = `${targetDate.toLocaleDateString()}`;
+  ageDisplay2.textContent = `責任開始日：${targetDate.toLocaleDateString()}`;
 
   return age;
 
