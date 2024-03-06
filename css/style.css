@@ -695,6 +695,7 @@ a:hover.btn1, a:hover.btn2 {
 .color-check, .color-check a {color: #f00 !important;}
 .c {text-align: center !important;}
 .ws {width: 95%;display: block;background-color:#f2d5d5;border: none;height:40px;padding:10px;}
+.wm {width: 95%;display: block;background-color:#f2d5d5;border: none;height:40px;padding:10px;}
 .wl {width: 95%;display: block;background-color:#f2d5d5;border: none;padding:10px;}
 .mb30 {margin-bottom: 30px !important;}
 .mt30 {margin-top: 30px !important;}
@@ -930,6 +931,7 @@ html, body {
 /*その他
 ---------------------------------------------------------------------------*/
 .ws {width: 48%;display: inline;height:40px;background-color:#f2d5d5;border: none;padding:10px;}
+.wm {width: 96%;display: inline;height:40px;background-color:#f2d5d5;border: none;padding:10px;}
 .sh {display: none;}
 .pc {display: inline-block;}
 
