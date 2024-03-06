@@ -47,11 +47,11 @@
       <th>生年月日</th>
        <td>
       <div class="form-select-wrap">
-         <select class="birthday-year" style="width: 180px;"></select>年
+         <select class="birthday-year" style="width: 180px;" onchange="calculate()"></select>年
       </div>
       <div class="form-select-wrap">
-         <select class="birthday-month"></select>月
-         <select class="birthday-day"></select>日
+         <select class="birthday-month"></select onchange="calculate()">月
+         <select class="birthday-day"></select onchange="calculate()">日
       </div>
       </td>
     </tr>
