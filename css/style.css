@@ -1092,3 +1092,16 @@ form .btns:hover{
   .helpbutton:hover {
    cursor: pointer;
 }
+
+  .box1 {
+    box-sizing: border-box;
+    width: 250px !important;
+    height: 40px !important;
+    margin: auto !important;
+    padding: 5px 10px !important;
+    border: 1px solid #fff;
+    color: #b9454b;
+    font-size: 140%;
+    font-weight : bold;
+    text-align: center;
+  }
