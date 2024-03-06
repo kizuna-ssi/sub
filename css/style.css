@@ -1074,8 +1074,7 @@ form .btns:hover{
 
   .form-select-wrap > select{
    padding: 8px 16px;
-   margin-left: 10px;
-   margin-right: 10px;
+   margin: 10px 5px 5px 5px;
    border: 1px solid #e58882;
    border-radius: 4px;
    font-size: 20px;
