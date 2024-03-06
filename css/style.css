@@ -1033,6 +1033,28 @@ form .btns:hover{
    text-align: center;
 }
 
+  .description1 {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 1.6em;
+    color: #fff;
+    border-radius: 5px;
+    background: #4c4f54;
+    width: 140px;
+}
+
+  .description1:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border: 15px solid transparent;
+    border-top: 15px solid #4c4f54;
+    margin-left: -15px;
+}
+
   .tooltip1{
     position: relative;
     cursor: pointer;
