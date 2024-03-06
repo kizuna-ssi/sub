@@ -1159,3 +1159,36 @@ form .btns:hover{
     font-weight : bold;
     text-align: center;
   }
+
+.radio01{
+	float: left;	
+	width: 100%;	
+	margin:0 0 50px 0;
+}
+.radio01 input{
+	display: none;
+}
+.radio01 label{
+	display: block;
+	float: left;
+	cursor: pointer;
+	width: 180px;
+	margin: 1px 0 1px 0;
+	padding: 1.4% 0 1.5% 0;
+	border-right: 1px solid #d7d7d7;
+	background: #e5e5e5;
+	color: #555e64;
+	font-size: 14px;
+	text-align: center;
+	line-height: 1;
+	transition: .2s;
+}
+.radio01 label:first-of-type{
+}
+.radio01 label:last-of-type{
+	border-right: 0px;
+}
+.radio01 input[type="radio"]:checked + label {
+	background-color: #a1b91d;
+	color: #fff;
+}
