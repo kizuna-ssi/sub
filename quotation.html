@@ -44,27 +44,25 @@
   
   <table class="ta1">
     <tr>
-      <th rowspan="2">生年月日</th>
+      <th>生年月日</th>
        <td>
       <div class="form-select-wrap">
-        <select class="birthday-year" onchange="calculate()" style="width: 190px;"></select>年
+        <select class="birthday-year" onchange="calculate()" style="width: 190px;"></select>年<br class="br-sp">
         <select class="birthday-month" onchange="calculate()"></select>月
         <select class="birthday-day" onchange="calculate()"></select>日
       </div>
       </td>
     </tr>
-  </table><br>
-
-  <table class="ProductTable">
-    <tr><th colspan="2">性別</th></tr>
-    <tr><td>
-     <input type="radio" id="male" name="gender" onchange="calculate()" value="1" checked>
-     <label for="male">男性</label>
-    </td>
-    <td>
-     <input type="radio" id="female" name="gender" onchange="calculate()" value="2">
-     <label for="female">女性</label>
-    </td></tr>
+    <tr>
+      <th>性別</th>
+      <td>
+        <input type="radio" id="male" name="gender" onchange="calculate()" value="1" checked>
+        <label for="male">男性</label>
+      </td>
+      <td>
+        <input type="radio" id="female" name="gender" onchange="calculate()" value="2">
+        <label for="female">女性</label>
+      </td></tr>
   </table><br>
 
   <table class="ProductTable">
