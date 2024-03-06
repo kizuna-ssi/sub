@@ -120,7 +120,7 @@ main > article {
 /*ヘッダーブロック*/
 header {
 	display: flex;					/*flexボックスを使う指定*/
-	justify-content: left;	/*並びかたの種類の指定*/
+	justify-content: space-between;	/*並びかたの種類の指定*/
 	align-items: center;			/*垂直揃えの指定。天地中央に配置されるように。*/
 	background: #e58882;			/*背景色*/
 	position: fixed; z-index: 1;	/*スクロールしても動かないようにする指定*/
