@@ -86,7 +86,8 @@ main > article {
 /*２カラムを囲むブロック*/
 .c2 {
 	display: flex;			/*flexボックスを使う指定*/
-	flex-direction: column;	/*子要素を縦並びにする*/
+	flex-direction: column;		/*子要素を縦並びにする*/
+	padding: 5px 5px 5px 20px;
 }
 
 /*c2内のh2見出し*/
