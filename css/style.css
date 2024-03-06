@@ -804,9 +804,6 @@ html, body {
 	flex-direction: row;			/*子要素を横並びにする*/
 	justify-content: start;		/*並びかたの種類の指定*/
 	align-items: center;			/*垂直揃えの指定。天地中央に配置されるように。*/
-	
-	margin-left: -6%;
-	margin-right: -6%;
 }
 /*画像ブロック*/
 .c3 .image {
