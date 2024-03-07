@@ -1212,34 +1212,35 @@ form .btns:hover{
 }
 
 .document ol.propo, ol.propo ol{
-  padding-left: 1em; 
+	padding-left: 1em; 
 }
 
 .document ol.propo li{
-  list-style-type:none; 
-  margin-left: 3em;     
+	list-style-type:none; 
+	margin-left: 3em;     
 }
 
 .document ol.propo li:before{
-  display: inline-block; 
-  text-align: right; 
-  margin-right: 5px; 
-  margin-left: -3em; 
+	display: inline-block; 
+	text-align: right; 
+	margin-right: 5px; 
+	margin-left: -3em; 
 }
 
 /*カウンターの設定（olの階層ごとに設定）*/
 .document ol.propo>li{
-  counter-increment: level1; 
+	counter-increment: level1; 
 }
 
 .document ol.propo>li:before{
-  content: "（"counter(level1, number)"）"; 
+	content: "（"counter(level1, number)"）"; 
 }
 
 .document ol.propo>li>ol>li{
-  counter-increment: level2; /*同上*/
+	counter-increment: level2; /*同上*/
 }
 
 .document ol.propo>li>ol>li:before{
-  content: "〔"counter(level2, number)"〕"; 
+	content: "〔"counter(level2, number)"〕"; 
+	margin-left: -3em; 
 }
