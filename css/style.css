@@ -1198,3 +1198,19 @@ form .btns:hover{
 .document h3{
 	text-indent: 1em;
 }
+
+.document ol.parentheses {
+	margin-left: 3.5em;
+}
+
+.document ol.parentheses li {
+	list-style-type: none;
+	counter-increment: cnt;
+}
+
+.document ol.parentheses li::before {
+	content: "(" counter(cnt) ")";
+	display:inline-block;
+	margin-left:-3em;
+	width: 3em;
+}
