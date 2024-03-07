@@ -1202,21 +1202,40 @@ form .btns:hover{
 .document h3{
 	padding-left:1em;
 	text-indent:-1em;
+	font-size: 130%;
 }
 
-.document ol.parentheses {
-	list-style: none;
-	counter-reset: number;
+.document ol.propo, ol.propo ol{
+  padding-left: 1em; 
 }
 
-.document ol.parentheses li {
-	position: relative;
-	padding-left: 50px;
+.document ol.propo li{
+  list-style-type:none; 
+  margin-left: 3em;     
 }
 
-.document ol.parentheses li::before {
-	counter-increment: number;
-	content: '（' counter(number) '）';
-	position: absolute;
-	left: 0;
+.document ol.propo li:before{
+  display: inline-block; 
+  text-align: right; 
+  width: 2em;        
+  margin-right: 1em; 
+  margin-left: -3em; 
+}
+
+/*カウンターの設定（olの階層ごとに設定）*/
+.document ol.propo>li{
+  counter-increment: level1; 
+}
+
+.document ol.propo>li:before{
+  content: "("counter(level1, upper-roman)")"; /*大文字のローマ数字*/
+  font-weight: bold;
+}
+
+.document ol.propo>li>ol>li{
+  counter-increment: level2; /*同上*/
+}
+
+.document ol.propo>li>ol>li:before{
+  content: "〔"counter(level2, lower-roman)"〕"; /*小文字のローマ数字*/
 }
