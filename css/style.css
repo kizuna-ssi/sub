@@ -1205,31 +1205,18 @@ form .btns:hover{
 }
 
 .document ol.parentheses {
-	margin-left: 3.5em;
+	list-style: none;
+	counter-reset: number;
 }
 
 .document ol.parentheses li {
-	list-style-type: none;
-	counter-increment: cnt;
+	position: relative;
+	padding-left: 40px;
 }
 
 .document ol.parentheses li::before {
-	content: "(" counter(cnt) ")";
-	display:inline-block;
-	margin-left:-3em;
-	width: 3em;
-}
-
-
-
-.document ol.parentheses li.parentheses2 {
-	list-style-type: none;
-	counter-increment: cnt;
-}
-
-.document ol.parentheses li.parentheses2::before {
-	content: "〔" counter(cnt) "〕";
-	display:inline-block;
-	margin-left:-3em;
-	width: 3em;
+	counter-increment: number;
+	content: '（' counter(number) '）';
+	position: absolute;
+	left: 0;
 }
