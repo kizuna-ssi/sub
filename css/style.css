@@ -1205,6 +1205,12 @@ form .btns:hover{
 	font-size: 130%;
 }
 
+.document h4{
+	padding-left:2em;
+	text-indent:-1em;
+	font-size: 130%;
+}
+
 .document ol.propo, ol.propo ol{
   padding-left: 1em; 
 }
