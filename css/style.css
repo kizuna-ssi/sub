@@ -1235,5 +1235,5 @@ form .btns:hover{
 }
 
 .document ol.propo>li>ol>li:before{
-  content: "〔"counter(level2, lower-roman)"〕"; /*小文字のローマ数字*/
+  content: "〔"counter(level2, number)"〕"; /*小文字のローマ数字*/
 }
