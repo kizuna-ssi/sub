@@ -1263,7 +1263,7 @@ form .btns:hover{
   border: dashed 2px #333333;
 }
 .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput {
-  background: #333333;
+  background: #e58882;
 }
 .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput::before {
   content: "";
@@ -1305,6 +1305,5 @@ form .btns:hover{
 .ECM_CheckboxInput-LabelText {
   margin-left: 12px;
   display: block;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 15px;
 }
