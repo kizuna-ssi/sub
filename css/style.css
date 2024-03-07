@@ -1217,7 +1217,6 @@ form .btns:hover{
 .document ol.propo li:before{
   display: inline-block; 
   text-align: right; 
-  width: 2em;        
   margin-right: 1em; 
   margin-left: -3em; 
 }
@@ -1228,8 +1227,7 @@ form .btns:hover{
 }
 
 .document ol.propo>li:before{
-  content: "("counter(level1, upper-roman)")"; /*大文字のローマ数字*/
-  font-weight: bold;
+  content: "（"counter(level1, number)"）"; /*大文字のローマ数字*/
 }
 
 .document ol.propo>li>ol>li{
