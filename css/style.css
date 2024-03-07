@@ -1187,3 +1187,11 @@ form .btns:hover{
 	background-color: #e58882;
 	color: #fff;
 }
+
+.document{
+	width: 100%;
+	max-width: 1200px;		
+}
+.document .p{
+	text-indent: 1em;
+}
