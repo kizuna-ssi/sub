@@ -1212,22 +1212,6 @@ form .btns:hover{
 	font-size: 130%;
 }
 
-.document ol.propo, ol.propo ol{
-	padding-left: 1em; 
-}
-
-.document ol.propo li{
-	list-style-type:none; 
-	margin-left: 3em;     
-}
-
-.document ol.propo li:before{
-	display: inline-block; 
-	text-align: right; 
-	margin-right: 5px; 
-	margin-left: -3em; 
-}
-
 /*カウンターの設定（olの階層ごとに設定）*/
 .document ol.propo>li{
 	counter-increment: level1; 
@@ -1238,11 +1222,20 @@ form .btns:hover{
 }
 
 .document ol.propo>li>ol>li{
-	counter-increment: level2; /*同上*/
+	counter-increment: level2; 
 }
 
 .document ol.propo>li>ol>li:before{
 	content: "〔"counter(level2, number)"〕"; 
+	margin-left: -3em; 
+}
+
+.document ol.propo>li>ol>li>ol>li{
+	counter-increment: level3; 
+}
+
+.document ol.propo>li>ol>li>ol>li:before{
+	content: "〔"counter(level3, number)"〕"; 
 	margin-left: -3em; 
 }
 
