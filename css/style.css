@@ -1263,6 +1263,7 @@ form .btns:hover{
 	text-align: center;
 	background-color: #eeeeee;
 	padding:15px;
+	width: 40%;
 }
 
 .document td{
