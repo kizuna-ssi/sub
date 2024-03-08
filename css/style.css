@@ -1271,8 +1271,18 @@ form .btns:hover{
 
 @media screen and (max-width:400px) {
 .document table{
-	margin: 0% 0% 0% -10%;
+	margin: auto; 
 }
+
+.document th{
+	display: block;
+	width: 100%;
+}
+
+.document td{
+	display: block;
+	width: 100%;
+}	
 }	
 
 
