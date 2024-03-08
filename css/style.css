@@ -1246,6 +1246,26 @@ form .btns:hover{
 	margin-left: -3em; 
 }
 
+.document table{
+	border: solid 1px;
+	border-bottom: solid 0px;
+}
+
+.document tr{
+	border-bottom: solid 1px;
+}
+
+.document th{
+	background-color: #ccc;
+}
+
+
+.document td{
+	border-left: solid 1px;
+}
+
+
+
 .ECM_CheckboxInput {
   padding: 12px 8px;
   display: flex;
