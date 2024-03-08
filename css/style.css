@@ -1254,10 +1254,12 @@ form .btns:hover{
 }
 
 .document tr{
+	border-right: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 }
 
 .document th{
+	border-left: 1px solid #ccc;
 	text-align: center;
 	background-color: #eeeeee;
 	padding:15px;
@@ -1266,6 +1268,12 @@ form .btns:hover{
 .document td{
 	padding:15px;
 }
+
+@media screen and (max-width:400px) {
+.document table{
+	margin: 0% 0% 0% -10%;
+}
+}	
 
 
 
