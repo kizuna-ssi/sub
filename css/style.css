@@ -1213,7 +1213,8 @@ form .btns:hover{
 }
 
 .document ol{
-	padding-left: 1em;  
+	padding-left: 2em;
+	text-indent: -2em;
 }
 
 .document ol li{
