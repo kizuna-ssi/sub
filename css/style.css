@@ -1212,6 +1212,10 @@ form .btns:hover{
 	font-size: 130%;
 }
 
+.document ol{
+	list-style-type:none; 
+}
+
 .document ol.propo{
 	padding-left: 1em; 
 }
@@ -1243,15 +1247,6 @@ form .btns:hover{
 
 .document ol.propo>li>ol>li:before{
 	content: "〔"counter(level2, decimal)"〕"; 
-	margin-left: -3em; 
-}
-
-.document ol.propo>li>ol>li>ol>li{
-	counter-increment: level3; 
-}
-
-.document ol.propo>li>ol>li>ol>li:before{
-	content: "〔"counter(level3, decimal)"〕"; 
 	margin-left: -3em; 
 }
 
