@@ -1256,7 +1256,7 @@ form .btns:hover{
 }
 
 .document th{
-	textalign: center;
+	text-align: center;
 	background-color: #ccc;
 	padding:5px;
 }
