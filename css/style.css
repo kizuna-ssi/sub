@@ -1247,8 +1247,7 @@ form .btns:hover{
 }
 
 .document table{
-	border: solid 1px;
-	border-bottom: solid 0px;
+	margin: auto; 
 }
 
 .document tr{
@@ -1257,12 +1256,11 @@ form .btns:hover{
 
 .document th{
 	text-align: center;
-	background-color: #ccc;
-	padding:5px;
+	background-color: #dcdcdc;
+	padding:10px;
 }
 
 .document td{
-	border-left: solid 1px;
 	padding:5px;
 }
 
