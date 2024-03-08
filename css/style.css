@@ -741,10 +741,6 @@ a.btn1 i, a.btn2 i {
 	margin-left: 10px;
 }
 
-.ECM_CheckboxInput-DummyInput {
-  width: 50px;
-}
-
 /*　※注意！　下の閉じカッコ　}　はこのブロックに必要なので、削除しないで下さい。　*/
 
 }
@@ -1314,3 +1310,12 @@ form .btns:hover{
   font-weight: bold;
 }
 
+@media screen and (max-width:400px) {
+.ECM_CheckboxInput {
+	width: 100%;
+}
+	
+.ECM_CheckboxInput-DummyInput {
+	width: 25%;
+}
+}
