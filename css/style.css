@@ -724,7 +724,9 @@ a:hover.btn1, a:hover.btn2 {
 .pc {display: none;}
 .hidden {position: absolute; top: -9999px; left: -9999px;}
 
-
+.ECM_CheckboxInput-DummyInput {
+  width: 50px;
+}
 
 /*---------------------------------------------------------------------------
 ここから下は画面幅400px以下の追加指定
@@ -1252,7 +1254,6 @@ form .btns:hover{
   display: flex;
   align-items: center;
   cursor: pointer;
-  width: 100%;
 }
 .ECM_CheckboxInput-Input {
   margin: 0;
