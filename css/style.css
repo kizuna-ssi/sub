@@ -1247,21 +1247,24 @@ form .btns:hover{
 }
 
 .document table{
+	border-top: 1px solid #ccc;
+	width: 100%;
+	max-width: 800px;
 	margin: auto; 
 }
 
 .document tr{
-	border-bottom: solid 1px;
+	border-bottom: 1px solid #ccc;
 }
 
 .document th{
 	text-align: center;
-	background-color: #dcdcdc;
-	padding:10px;
+	background-color: #ccc;
+	padding:15px;
 }
 
 .document td{
-	padding:5px;
+	padding:15px;
 }
 
 
