@@ -658,7 +658,6 @@ a:hover.btn1, a:hover.btn2 {
 
 /*th（左側）、td（右側）の共通設定*/
 .ta1 th, .ta1 td {
-	display: block;
 	padding: 10px 5px;		/*上下、左右へのボックス内の余白*。基本的に数行上の「.ta1 caption」のpaddingと揃えておけばOKです。*/
 	word-break: break-all;	/*英語などのテキストを改行で自動的に折り返す設定。これがないと、テーブルを突き抜けて表示される場合があります。*/
 
