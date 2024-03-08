@@ -1252,6 +1252,7 @@ form .btns:hover{
   display: flex;
   align-items: center;
   cursor: pointer;
+  width: 100%;
 }
 .ECM_CheckboxInput-Input {
   margin: 0;
