@@ -1212,6 +1212,22 @@ form .btns:hover{
 	font-size: 130%;
 }
 
+.document ol.propo{
+	padding-left: 1em; 
+}
+
+.document ol.propo li{
+	list-style-type:none; 
+	margin-left: 3em;     
+}
+
+.document ol.propo li:before{
+	display: inline-block; 
+	text-align: right; 
+	margin-right: 5px; 
+	margin-left: -3em; 
+}
+
 /*カウンターの設定（olの階層ごとに設定）*/
 .document ol.propo>li{
 	counter-increment: level1; 
