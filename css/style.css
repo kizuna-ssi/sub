@@ -724,9 +724,7 @@ a:hover.btn1, a:hover.btn2 {
 .pc {display: none;}
 .hidden {position: absolute; top: -9999px; left: -9999px;}
 
-.ECM_CheckboxInput-DummyInput {
-  width: 32px;
-}
+
 
 /*---------------------------------------------------------------------------
 ここから下は画面幅400px以下の追加指定
@@ -743,6 +741,9 @@ a.btn1 i, a.btn2 i {
 	margin-left: 10px;
 }
 
+.ECM_CheckboxInput-DummyInput {
+  width: 50px;
+}
 
 /*　※注意！　下の閉じカッコ　}　はこのブロックに必要なので、削除しないで下さい。　*/
 
@@ -1300,7 +1301,7 @@ form .btns:hover{
   top: 0;
   left: 0;
   display: block;
-  width: 50px;
+  width: 32px;
   height: 32px;
   border: solid 2px transparent;
   background: rgba(0,0,0, .1);
