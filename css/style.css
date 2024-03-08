@@ -1213,8 +1213,21 @@ form .btns:hover{
 }
 
 .document ol{
-	list-style-type:none; 
+	padding-left: 1em;  
 }
+
+.document ol li{
+	list-style-type:none; 
+	margin-left: 3em;  
+}
+
+.document ol li:before{
+	display: inline-block; 
+	text-align: right; 
+	margin-right: 5px; 
+	margin-left: -3em; 
+}
+
 
 .document ol.propo{
 	padding-left: 1em; 
