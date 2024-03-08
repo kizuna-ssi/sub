@@ -1234,7 +1234,7 @@ form .btns:hover{
 }
 
 .document ol.propo>li:before{
-	content: "（"counter(level1, number)"）"; 
+	content: "（"counter(level1, decimal)"）"; 
 }
 
 .document ol.propo>li>ol>li{
@@ -1242,7 +1242,7 @@ form .btns:hover{
 }
 
 .document ol.propo>li>ol>li:before{
-	content: "〔"counter(level2, number)"〕"; 
+	content: "〔"counter(level2, decimal)"〕"; 
 	margin-left: -3em; 
 }
 
@@ -1251,7 +1251,7 @@ form .btns:hover{
 }
 
 .document ol.propo>li>ol>li>ol>li:before{
-	content: "〔"counter(level3, number)"〕"; 
+	content: "〔"counter(level3, decimal)"〕"; 
 	margin-left: -3em; 
 }
 
