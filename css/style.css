@@ -725,7 +725,7 @@ a:hover.btn1, a:hover.btn2 {
 .hidden {position: absolute; top: -9999px; left: -9999px;}
 
 .ECM_CheckboxInput-DummyInput {
-  width: 50px;
+  width: 32px;
 }
 
 /*---------------------------------------------------------------------------
@@ -1300,7 +1300,7 @@ form .btns:hover{
   top: 0;
   left: 0;
   display: block;
-  width: 32px;
+  width: 50px;
   height: 32px;
   border: solid 2px transparent;
   background: rgba(0,0,0, .1);
