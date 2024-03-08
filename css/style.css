@@ -1254,12 +1254,12 @@ form .btns:hover{
 }
 
 .document tr{
+	border-left: 1px solid #ccc;
 	border-right: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 }
 
 .document th{
-	border-left: 1px solid #ccc;
 	text-align: center;
 	background-color: #eeeeee;
 	padding:15px;
@@ -1277,11 +1277,13 @@ form .btns:hover{
 .document th{
 	display: block;
 	width: 100%;
+	padding:5px;
 }
 
 .document td{
 	display: block;
 	width: 100%;
+	padding:5px;
 }	
 }	
 
