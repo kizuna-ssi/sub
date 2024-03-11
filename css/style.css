@@ -1227,38 +1227,24 @@ form .btns:hover{
 }
 
 
-.document ol.propo{
-	padding-left: 1em; 
-}
-
-.document ol.propo li{
-	list-style-type:none; 
-	margin-left: 3em;     
-}
-
-.document ol.propo li:before{
-	display: inline-block; 
-	text-align: right; 
-	margin-right: 5px; 
-	margin-left: -3em; 
-}
-
 /*カウンターの設定（olの階層ごとに設定）*/
-.document ol.propo>li{
+.document ol>li{
 	counter-increment: level1; 
 }
 
-.document ol.propo>li:before{
+.document ol>li:before{
 	content: "（"counter(level1, decimal)"）"; 
 }
 
-.document ol.propo>li>ol>li{
+.document ol>li>ol>li{
 	counter-increment: level2; 
 }
 
-.document ol.propo>li>ol>li:before{
+.document ol>li>ol>li:before{
 	content: "〔"counter(level2, decimal)"〕"; 
 	margin-left: -3em; 
+	text-indent: -2em;
+
 }
 
 .document table{
