@@ -1228,6 +1228,11 @@ form .btns:hover{
 	margin-left: -3em; 
 }
 
+.document ol li ol{
+	padding-left: 2em;
+	text-indent: -2em;
+	margin-bottom: 0px;
+}
 
 .document table{
 	border-top: 1px solid #ccc;
