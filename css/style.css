@@ -1198,9 +1198,7 @@ form .btns:hover{
 
 
 .document h3{
-	padding-left:1em;
-	text-indent:-1em;
-	font-size: 130%;
+	font-size: 200%;
 }
 
 .document h4{
@@ -1235,6 +1233,18 @@ form .btns:hover{
 }
 
 .document ol li ol li{
+	list-style-type:none; 
+	margin-left: 1em;
+	text-indent: -2em;
+}
+
+.document ol li ol li ol{
+	padding-left: 0em;
+	text-indent: -2em;
+	margin-bottom: 0px;
+}
+
+.document ol li ol li ol li{
 	list-style-type:none; 
 	margin-left: 1em;
 	text-indent: -2em;
