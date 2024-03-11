@@ -106,9 +106,9 @@ $(function() {
 
 
         $(function(){
-            $('#header').load('./header.html'); // #headerにheader.htmlを読み込む
+            $('#header').load('https://kizuna-ssi.net/header.html'); // #headerにheader.htmlを読み込む
         });
 
         $(function(){
-            $('#footer').load('./footer.html'); // #footerにfooter.htmlを読み込む
+            $('#footer').load('https://kizuna-ssi.net/footer.html'); // #footerにfooter.htmlを読み込む
         });
