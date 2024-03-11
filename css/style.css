@@ -998,10 +998,11 @@ a.btn {
 	text-align: center;
 	vertical-align: middle;
 	text-decoration: none;
-	width: 120px;
+	width: 300px;
 	margin: auto;
 	padding: 1rem 4rem;
 	font-weight: bold;
+	font-size: 130%;
 	border: 2px solid #b9454b;
 	background: #b9454b;
 	color: #fff;
