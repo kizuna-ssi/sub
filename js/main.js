@@ -108,3 +108,7 @@ $(function() {
         $(function(){
             $('#header').load('./header.html'); // #headerにheader.htmlを読み込む
         });
+
+        $(function(){
+            $('#footer').load('./footer.html'); // #footerにfooter.htmlを読み込む
+        });
