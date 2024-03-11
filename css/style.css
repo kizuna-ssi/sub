@@ -1216,7 +1216,8 @@ form .btns:hover{
 
 .document ol li{
 	list-style-type:none; 
-	margin-left: 3em;  
+	margin-left: 2em;
+	text-indent: -2em;
 }
 
 .document ol li:before{
