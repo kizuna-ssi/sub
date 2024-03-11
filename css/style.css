@@ -993,7 +993,7 @@ html, body {
 
 }
 
-a.btn {
+a.btn_01 {
 	display: block;
 	text-align: center;
 	vertical-align: middle;
@@ -1004,13 +1004,12 @@ a.btn {
 	font-weight: bold;
 	font-size: 130%;
 	border: 2px solid #b9454b;
-	background: #b9454b;
-	color: #fff;
+	color: #b9454b;
 	transition: 0.5s;
 }
-a.btn:hover {
-	color: #b9454b;
-	background: #fff;
+a.btn_01:hover {
+	color: #fff;
+	background: #b9454b;
 }
 
 .center{
