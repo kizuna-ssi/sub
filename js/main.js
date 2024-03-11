@@ -105,11 +105,6 @@ $(function() {
 
 
 
-      $(function() {
-        $.get('header.html', function(data){
-          $('body').prepend(data);
+        $(function(){
+            $('#header').load('./header.html'); // #headerにheader.htmlを読み込む
         });
-        $.get('footer.html', function(data){
-          $('body').append(data);
-        });
-      });
