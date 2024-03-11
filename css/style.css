@@ -1254,7 +1254,7 @@ form .btns:hover{
 	padding:15px;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:899px) {
 .document table{
 	margin: auto; 
 }
