@@ -1229,7 +1229,7 @@ form .btns:hover{
 }
 
 .document ol li ol{
-	padding-left: 2em;
+	padding-left: 0em;
 	text-indent: -2em;
 	margin-bottom: 0px;
 }
