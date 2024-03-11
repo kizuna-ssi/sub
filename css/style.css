@@ -1272,48 +1272,18 @@ form .btns:hover{
 }	
 }	
 
-.document .table_boldernone{
+.document .boldernone{
 	border-top: 1px solid #fff;
 	width: 100%;
 	max-width: 800px;
 	margin: auto; 
 }
 
-.document.table_boldernone tr{
+.document .boldernone tr{
 	border-left: 1px solid #fff;
 	border-right: 1px solid #fff;
 	border-bottom: 1px solid #fff;
 }
-
-.document.table_boldernone th{
-	text-align: center;
-	background-color: #eeeeee;
-	padding:15px;
-	width: 45%;
-}
-
-.document.table_boldernone td{
-	padding:15px;
-}
-
-@media screen and (max-width:899px) {
-.document.table_boldernone{
-	margin: auto; 
-}
-
-.document.table_boldernone th{
-	display: block;
-	width: 100%;
-	padding:5px;
-}
-
-.document.table_boldernone td{
-	display: block;
-	width: 100%;
-	padding: 5px 5px 5px 15px;
-}	
-}
-
 
 
 .ECM_CheckboxInput {
