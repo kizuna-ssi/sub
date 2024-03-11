@@ -1003,14 +1003,14 @@ a.btn {
 	padding: 1em 1em;
 	font-weight: bold;
 	font-size: 110%;
-	border: 2px solid #b9454b;
-	color: #b9454b;
+	border: 2px solid #e58882;
+	color: #e58882;
 	transition: 0.5s;
 	background: #fff;
 }
 a.btn:hover {
 	color: #fff;
-	background: #b9454b;
+	background: #e58882;
 }
 
 .center{
