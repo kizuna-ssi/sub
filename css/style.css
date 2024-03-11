@@ -1006,6 +1006,7 @@ a.btn {
 	border: 2px solid #b9454b;
 	color: #b9454b;
 	transition: 0.5s;
+	background: #fff;
 }
 a.btn:hover {
 	color: #fff;
