@@ -1227,26 +1227,6 @@ form .btns:hover{
 }
 
 
-/*カウンターの設定（olの階層ごとに設定）*/
-.document ol>li{
-	counter-increment: level1; 
-}
-
-.document ol>li:before{
-	content: "（"counter(level1, decimal)"）"; 
-}
-
-.document ol>li>ol>li{
-	counter-increment: level2; 
-}
-
-.document ol>li>ol>li:before{
-	content: "〔"counter(level2, decimal)"〕"; 
-	margin-left: -3em; 
-	text-indent: -2em;
-
-}
-
 .document table{
 	border-top: 1px solid #ccc;
 	width: 100%;
