@@ -1362,44 +1362,5 @@ form .btns:hover{
 	width: 25%;
 }
 }
-
-.ta2 table{
-	border-top: 1px solid transparent;
-	width: 100%;
-	max-width: 800px;
-	margin: auto; 
-}
-
-.ta2 tr{
-	border-left: 1px solid transparent;
-	border-right: 1px solid transparent;
-	border-bottom: 1px solid transparent;
-}
-
-.ta2 th{
-	text-align: center;
-	background-color: #11ffee00;
-	padding:15px;
-	width: 45%;
-}
-
-.ta2 td{
-	padding:15px;
-}
-
-@media screen and (max-width:899px) {
-
-
-.ta2 th{
-	display: block;
-	width: 100%;
-	padding:5px;
-}
-
-.ta2 td{
-	display: block;
-	width: 100%;
-	padding: 5px 5px 5px 85px;
-}	
-}	
+	
 
