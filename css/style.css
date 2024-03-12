@@ -1001,7 +1001,7 @@ a.btn {
 	width: 310px;
 	margin: auto;
 	padding: 1em 1em;
-	font-weight: bold;
+	font-weight: nomal;
 	font-size: 110%;
 	border: 2px solid #e58882;
 	color: #e58882;
