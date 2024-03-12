@@ -1255,6 +1255,8 @@ form .btns:hover{
 
 .document td{
 	padding:15px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
 }
 
 @media screen and (max-width:899px) {
