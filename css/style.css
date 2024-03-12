@@ -704,6 +704,17 @@ a:hover.btn1, a:hover.btn2 {
 	border-left: 1px solid #ccc;
 }
 
+.ta2-th1 {
+	width: 50%;
+}
+
+.ta2-th2 {
+	width: 20%;
+}
+
+.ta2-th3 {
+	width: 30%;
+}
 
 
 
