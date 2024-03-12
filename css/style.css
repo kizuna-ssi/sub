@@ -1308,6 +1308,8 @@ form .btns:hover{
 .document .td2{
 	width: 20%;
 	tex-align: left;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
 }
 .document .td3{
 	width: 25%;
