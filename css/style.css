@@ -1353,7 +1353,7 @@ form .btns:hover{
   font-weight: bold;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:899px) {
 .ECM_CheckboxInput {
 	width: 100%;
 }
@@ -1364,16 +1364,16 @@ form .btns:hover{
 }
 
 .ta2 table{
-	border-top: 1px solid #ccc;
+	border-top: 1px solid transparent;
 	width: 100%;
 	max-width: 800px;
 	margin: auto; 
 }
 
 .ta2 tr{
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	border-bottom: 1px solid transparent;
 }
 
 .ta2 th{
@@ -1405,15 +1405,3 @@ form .btns:hover{
 }	
 }	
 
-.ta2 .boldernone{
-	border-top: 1px solid #fff;
-	width: 100%;
-	max-width: 800px;
-	margin: auto; 
-}
-
-.ta2 .boldernone tr{
-	border-left: 1px solid #fff;
-	border-right: 1px solid #fff;
-	border-bottom: 1px solid #fff;
-}
