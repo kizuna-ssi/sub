@@ -1255,9 +1255,7 @@ form .btns:hover{
 
 .document td{
 	padding:15px;
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
+
 }
 
 @media screen and (max-width:899px) {
@@ -1303,15 +1301,37 @@ form .btns:hover{
 	width: 25%;
 	tex-align: left;
 }
+.document .td1{
+	width: 55%;
+	tex-align: left;
+}
+.document .td2{
+	width: 20%;
+	tex-align: left;
+}
+.document .td3{
+	width: 25%;
+	tex-align: left;
+}
+
 @media screen and (max-width:899px) {
 .document .th1{
 	width: 100%;
 }
 .document .th2{
-	width: 100%;
+	display: none;
 }
 .document .th3{
+	display: none;
+}
+.document .td1{
 	width: 100%;
+}
+.document .td2{
+	display: none;
+}
+.document .td3{
+	display: none;
 }
 }
 
