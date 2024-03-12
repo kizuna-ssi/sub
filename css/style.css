@@ -691,18 +691,19 @@ a:hover.btn1, a:hover.btn2 {
 	border-bottom: 1px solid #ccc;	/*テーブルの下線。幅、線種、色*/
 }
 
-/*th（左側）、td（右側）の共通設定*/
-.ta2 th, .ta2 td {
-	padding: 10px 5px;		/*上下、左右へのボックス内の余白*。基本的に数行上の「.ta2 caption」のpaddingと揃えておけばOKです。*/
-	word-break: break-all;	/*英語などのテキストを改行で自動的に折り返す設定。これがないと、テーブルを突き抜けて表示される場合があります。*/
-
-}
-
-/*th（左側）のみの設定*/
 .ta2 th {
-	text-align: center;	/*中央よせにする*/
-	width: 30%;			/*幅*/
+	padding: 10px 5px;
+	word-break: break-all;
+	text-align: left;
 }
+
+.ta2 td {
+	padding: 10px 5px;
+	word-break: break-all;
+	text-align: left;
+	border-left: 1px solid #ccc;
+}
+
 
 
 
