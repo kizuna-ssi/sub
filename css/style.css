@@ -376,29 +376,7 @@ footer .pr {display: block;}
 	padding-bottom: 5px;	/*下に空けるスペース*/
 }
 
-/*table*/
-#footermenu table {
-	border-top: 1px solid #ccc;
-	width: 100%;
-	max-width: 800px;
-	margin: auto; 
-}
-#footermenut tr{
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
-}
 
-#footermenu th{
-	text-align: center;
-	background-color: #eeeeee;
-	padding:15px;
-	width: 45%;
-}
-
-#footermenu td{
-	padding:15px;
-}
 
 
 /*「お知らせ」ブロック
@@ -934,22 +912,6 @@ html, body {
 	padding: 5% 20%;	/*上下、左右へのボックス内の余白*/
 }
 	
-#footermenu table{
-	margin: auto; 
-}
-
-#footermenu th{
-	display: block;
-	width: 100%;
-	padding:5px;
-}
-
-#footermenu td{
-	display: block;
-	width: 100%;
-	padding: 5px 5px 5px 15px;
-}
-
 
 /*listブロック
 ---------------------------------------------------------------------------*/
