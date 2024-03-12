@@ -671,52 +671,6 @@ a:hover.btn1, a:hover.btn2 {
 	width: 30%;			/*幅*/
 }
 
-.ta2 caption {
-	font-weight: bold;		/*太字に*/
-	padding: 10px 5px;		/*上下、左右へのボックス内の余白。基本的に数行下の「.ta2 th, .ta2 td」のpaddingと揃えておけばOKです。*/
-	background: #eee;		/*背景色*/
-	margin-bottom: 15px;	/*下に空けるスペース*/
-}
-
-/*ta2テーブルブロック設定*/
-.ta2 {
-	border-top: 1px solid #ccc;	/*テーブルの一番上の線。幅、線種、色*/
-	width: 100%;
-	max-width: 800px;
-	margin: 0 auto 30px;		/*最後の「30px」がテーブルの下に空けるスペースです*/
-}
-
-/*tr（１行分）タグ設定*/
-.ta2 tr {
-	border-bottom: 1px solid #ccc;	/*テーブルの下線。幅、線種、色*/
-}
-
-.ta2 th {
-	padding: 10px 5px;
-	word-break: break-all;
-	text-align: left;
-}
-
-.ta2 td {
-	padding: 10px 5px;
-	word-break: break-all;
-	text-align: left;
-	border-left: 1px solid #ccc;
-}
-
-.ta2-th1 {
-	width: 50%;
-}
-
-.ta2-th2 {
-	width: 20%;
-}
-
-.ta2-th3 {
-	width: 30%;
-}
-
-
 
 /*背景色パターン
 ---------------------------------------------------------------------------*/
@@ -1334,6 +1288,29 @@ form .btns:hover{
 	border-bottom: 1px solid #fff;
 }
 
+.document .th1{
+	width: 55%;
+	tex-align: left;
+}
+.document .th2{
+	width: 20%;
+	tex-align: left;
+}
+.document .th3{
+	width: 25%;
+	tex-align: left;
+}
+@media screen and (max-width:899px) {
+.document .th1{
+	width: 100%;
+}
+.document .th2{
+	width: 100%;
+}
+.document .th3{
+	width: 100%;
+}
+}
 
 .ECM_CheckboxInput {
   padding: 12px 8px;
