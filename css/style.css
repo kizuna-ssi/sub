@@ -1388,9 +1388,7 @@ form .btns:hover{
 }
 
 @media screen and (max-width:899px) {
-.ta2 table{
-	margin: 5% 20%;
-}
+
 
 .ta2 th{
 	display: block;
@@ -1401,7 +1399,7 @@ form .btns:hover{
 .ta2 td{
 	display: block;
 	width: 100%;
-	padding: 5px 5px 5px 15px;
+	padding: 5px 5px 5px 85px;
 }	
 }	
 
