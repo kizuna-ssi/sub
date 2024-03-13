@@ -1408,8 +1408,13 @@ form .btns:hover{
 }
 	
 .ECM_CheckboxInput-DummyInput {
+	width: 25%;
+}
+
+.ECM_CheckboxInput-DummyInput2 {
 	width: 15%;
 }
+
 }
 	
 
