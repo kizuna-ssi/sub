@@ -8,7 +8,7 @@
   <meta name="description" content="きずな少額短期保険">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LemJJEpAAAAAORBkdgfdDFNaZq2b46PUM_Aqydd"></script>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <body>
@@ -62,6 +62,11 @@
 <input type="reset" value="リセット" class="btns reset">
 </p>
 
+<button class="g-recaptcha" 
+        data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
+  
 </form>
 
 </section>
@@ -96,14 +101,11 @@
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/slick.js"></script>
 
-<script>
-  function onClick(e) {
-    e.preventDefault();
-    grecaptcha.enterprise.ready(async () => {
-      const token = await grecaptcha.enterprise.execute('6LemJJEpAAAAAORBkdgfdDFNaZq2b46PUM_Aqydd', {action: 'LOGIN'});
-    });
-  }
-</script>
+ <script>
+   function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
+ </script>
 
 </body>
 </html>
