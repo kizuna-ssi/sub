@@ -1461,3 +1461,6 @@ form .btns:hover{
 }
 	
 
+.grecaptcha-badge {
+    bottom: 70px !important;
+}
