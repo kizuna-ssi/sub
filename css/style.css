@@ -1395,6 +1395,49 @@ form .btns:hover{
   background: rgba(0,0,0, .1);
   border-radius: 4px;
 }
+.ECM_CheckboxInput-Input:focus + .ECM_CheckboxInput-DummyInput2{
+  border: dashed 2px #333333;
+}
+.ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput2 {
+  background: #e58882;
+}
+.ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  height: 4px;
+  border-radius: 2px;
+  transform: translate(-6px, 5px) rotateZ(-135deg);
+  transform-origin: 2px 2px;
+  background: #FFFFFF;
+}
+.ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 76%;
+  height: 4px;
+  border-radius: 2px;
+  transform: translate(-6px, 5px) rotateZ(-45deg);
+  transform-origin: 2px 2px;
+  background: #FFFFFF;
+}
+.ECM_CheckboxInput-DummyInput2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: solid 2px transparent;
+  background: rgba(0,0,0, .1);
+  border-radius: 4px;
+}
 .ECM_CheckboxInput-LabelText {
   margin-left: 12px;
   display: block;
