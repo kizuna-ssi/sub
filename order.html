@@ -8,6 +8,7 @@
   <meta name="description" content="きずな少額短期保険">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <body>
@@ -103,8 +104,14 @@
 </table>
 
 <p class="formbottom">
-<input type="submit" value="送信する" class="btns submit">
-<input type="reset" value="リセット" class="btns reset">
+  <input 
+    type="submit" 
+    value="送信する"
+    class="btns submit g-recaptcha"
+    data-sitekey="6Le2JZcpAAAAAPGX6KAuDaMRjxxrDnt1TuIjGWh7"
+    data-callback="onSubmit"
+    data-action="submit">
+  <input type="reset" value="リセット" class="btns reset">
 </p>
 
 </form>
@@ -140,6 +147,15 @@
 <!--スライドショー（slick）-->
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/slick.js"></script>
+
+<script>
+  function onSubmit(token) {
+    var form = document.getElementById('document_request_form');
+    if(form.reportValidity()) {
+      form.submit();
+    }
+  }
+</script>
 
 </body>
 </html>
