@@ -8,7 +8,7 @@
   <meta name="description" content="きずな少額短期保険">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LemJJEpAAAAAORBkdgfdDFNaZq2b46PUM_Aqydd"></script>  
+  <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 
 <section>
 
-<form action="https://ssgform.com/s/cepCBzQeDfMO" method="post">
+<form action="https://ssgform.com/s/cepCBzQeDfMO" method="post" id="document_request_form">
 
 <h2>DOCUMENT REQUEST<span>資料請求</span></h2>
 
@@ -62,6 +62,10 @@
 <input type="reset" value="リセット" class="btns reset">
 </p>
 
+    <button class="g-recaptcha"
+          data-sitekey="6Le2JZcpAAAAAPGX6KAuDaMRjxxrDnt1TuIjGWh7"
+          data-callback="onSubmit"
+          data-action="submit">送信する</button>
   
 </form>
 
@@ -98,16 +102,13 @@
 <script src="js/slick.js"></script>
 
 <script>
-function onClick(e) {
-  e.preventDefault();
-  grecaptcha.enterprise.ready(async () => {
-    const token = await grecaptcha.enterprise.execute('6LemJJEpAAAAAORBkdgfdDFNaZq2b46PUM_Aqydd', {action: 'LOGIN'});
-    // IMPORTANT: The 'token' that results from execute is an encrypted response sent by
-    // reCAPTCHA Enterprise to the end user's browser.
-    // This token must be validated by creating an assessment.
-    // See https://cloud.google.com/recaptcha-enterprise/docs/create-assessment
-  });
-}
+  function onSubmit(token) {
+    var form = document.getElementById('document_request_form');
+    if(form.reportValidity()) {
+      form.submit();
+    }
+  }
 </script>
+  
 </body>
 </html>
