@@ -8,7 +8,6 @@
   <meta name="description" content="きずな少額短期保険">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LemJJEpAAAAAORBkdgfdDFNaZq2b46PUM_Aqydd"></script>
 </head>
 
 <body>
@@ -19,13 +18,17 @@
 
 <section>
 
-<form action="https://ssgform.com/s/cepCBzQeDfMO" method="post">
+<form action="https://ssgform.com/s/9C1x5YNPxd8k" method="post">
 
-<h2>DOCUMENT REQUEST<span>資料請求</span></h2>
+<h2>DOCUMENT ORDER<span>募集資材の発注</span></h2>
 
 <table class="ta1">
 <tr>
-<th>お名前</th>
+<th>代理店名</th>
+<td><input type="text" name="お名前" size="30" class="ws" required="required" autocomplete="off"></td>
+</tr>
+<tr>
+<th>代理店コード</th>
 <td><input type="text" name="お名前" size="30" class="ws" required="required" autocomplete="off"></td>
 </tr>
 <tr>
@@ -37,23 +40,12 @@
 <td><input type="tel" name="電話番号" size="30" class="ws" required="required" autocomplete="off"></td>
 </tr>
 <tr>
-<th>郵便番号</th>
+<th>送付先-郵便番号</th>
 <td><input type="text" name="郵便番号" size="30" class="ws" required="required" autocomplete="off" pattern="\d{3}-?\d{4}"></td>
 </tr>
 <tr>
-<th>住所<br class="br-sp"><span style="font-size:70%;">（建物名含む）</span></th>
+<th>送付先-住所<br class="br-sp"><span style="font-size:70%;">（建物名含む）</span></th>
 <td><input type="text" name="住所" size="30" class="wm" required="required" autocomplete="off"></td>
-</tr>
-<tr>
-<th>個人情報の取扱いについて</th>
-<td>
-<label class="ECM_CheckboxInput">
-  <input class="ECM_CheckboxInput-Input" type="checkbox" required="required">
-  <span class="ECM_CheckboxInput-DummyInput"></span>
-  <span class="ECM_CheckboxInput-LabelText">
-    <a href="https://kizuna-ssi.net/policy/privacy.html" target="_blank">プライバシーポリシー</a>を確認のうえ、同意する</span>
-</label>
-</td>
 </tr>
 </table>
 
@@ -95,15 +87,6 @@
 <!--スライドショー（slick）-->
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/slick.js"></script>
-
-<script>
-  function onClick(e) {
-    e.preventDefault();
-    grecaptcha.enterprise.ready(async () => {
-      const token = await grecaptcha.enterprise.execute('6LemJJEpAAAAAORBkdgfdDFNaZq2b46PUM_Aqydd', {action: 'LOGIN'});
-    });
-  }
-</script>
 
 </body>
 </html>
