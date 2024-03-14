@@ -1064,9 +1064,8 @@ form .btns:hover{
    margin: 10px 5px 5px 5px;
    border: 1px solid #e58882;
    border-radius: 4px;
-   font-size: 18px;
+   font-size: 17px;
    color: #e58882;
-   font-weight : bold;
    text-align: center;
 }
 
@@ -1154,7 +1153,7 @@ form .btns:hover{
 	display: block;
 	float: left;
 	cursor: pointer;
-	width: 180px;
+	width: 120px;
 	margin: 10px 3px 0;
 	padding: 1.4% 0 1.5% 0;
 	border-right: 1px solid #d7d7d7;
