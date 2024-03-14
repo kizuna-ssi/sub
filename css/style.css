@@ -1506,7 +1506,7 @@ transition: 0.5s;
 .ac-box input:checked ~ .open{
 height: auto;
 padding: 5px;
-background: #eaeaea;
+background: #e5e5e5;
 opacity: 1;
 }
 
