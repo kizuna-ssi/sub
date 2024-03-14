@@ -100,8 +100,9 @@ main > article {
 }
 
 .c3 {
-	display: flex;			/*flexボックスを使う指定*/
-	flex-direction: column;		/*子要素を縦並びにする*/
+	display: flex;	
+	justify-content: center; 
+	flex-direction: row;
 	padding: 5px 5px 5px 20px;
 }
 
