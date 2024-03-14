@@ -1459,7 +1459,10 @@ form .btns:hover{
 
 }
 	
-
 .grecaptcha-badge {
-    bottom: 80px !important;
+	bottom: 80px !important;
+}
+
+#modalBody {
+	white-space: pre-wrap;
 }
