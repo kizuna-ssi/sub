@@ -1507,6 +1507,7 @@ transition: 0.5s;
 height: auto;
 width: 100%;
 max-width: 800px;
+margin: auto;
 padding: 35px;
 background: #ffff;
 border: 3px solid #e58882;
