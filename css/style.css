@@ -1495,8 +1495,7 @@ transition: all .3s;
 display: none;
 }
 
-
-.ac-box div{
+.ac-box .open{
 height: 0px;
 padding: 0px;
 overflow: hidden;
@@ -1504,20 +1503,10 @@ opacity: 0;
 transition: 0.5s;
 }
 
-.ac-box input:checked ~ div{
+.ac-box input:checked ~ .open{
 height: auto;
 padding: 5px;
 background: #eaeaea;
 opacity: 1;
 }
 
-.ac-box div p{
-color: #777;
-line-height: 23px;
-font-size: 14px;
-padding: 20px;
-text-align: justify;
-}
-.ac-small p{
-margin-bottom: 0px;
-}
