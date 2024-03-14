@@ -35,12 +35,6 @@
          <select class="birthday-month" style="width: 50px;" onchange="calculate()"></select>月
          <select class="birthday-day" style="width: 50px;" onchange="calculate()">></select>日
       </div>
-         <p style="font-size: 0.9rem; margin-bottom: 8px; margin-left: 8px;">
-           本日お申込みされた場合の責任開始日は<br class="br-sp">「
-           <span id="ageDisplay2" type="text" readonly="" style="font-weight: bold; color: #e58882;"></span> 」です。<br>
-           責任開始日時点の年齢（契約年齢）は<br class="br-sp">「
-           <span id="ageDisplay1" type="text" readonly="" style="font-weight: bold; color: #e58882;"></span> 歳」です。
-         </p>
       </td>
     </tr>
     <tr>
@@ -67,19 +61,29 @@
         </div>
      </td>
     </tr>
-    <tr>
-     <th>保険<br class="br-sp">金額</th>
-     <td>
-       <div class="c3">
-         <div style="display:none"><input id="amount" type="text" readonly=""></div>
-         <div id="product2" type="text" readonly="" style="font-size: 150%; color: #e58882; font-weight: bold;"></div>
-         <div id="ageDisplay1" type="text" readonly=""></div>
-         <div style="display:none"><div id="ageDisplay2" type="text" readonly=""></div></div>
-       </div>
-     </td>
-    </tr>
-    <tr>
-      <td colspan="2">
+  </table>
+
+        
+    <div class="ac-box">
+      <input id="ac-1" name="accordion-1" type="checkbox" />
+      <label for="ac-1"> 見積結果 </label>
+      <div class="open">
+
+         <div class="c3" style="justify-content: center;">
+           <span style="font-weight: bold;">保険金額：　</span>
+           <div style="display:none"><input id="amount" type="text" readonly=""></div>
+         <div id="product2" type="text" readonly="" style="font-size: 180%; color: #e58882; font-weight: bold;"></div>
+         </div>
+
+        <br>
+         <p style="font-size: 0.9rem; text-align:center;">
+           本日お申込みされた場合の責任開始日は<br class="br-sp">「
+           <span id="ageDisplay2" type="text" readonly="" style="font-weight: bold; color: #e58882;"></span> 」です。<br>
+           責任開始日時点の年齢（契約年齢）は<br class="br-sp">「
+           <span id="ageDisplay1" type="text" readonly="" style="font-weight: bold; color: #e58882;"></span> 歳」です。
+         </p>
+
+        <hr>
         <p style="font-size: 0.8rem; text-indent: -2em; padding-left: 2em; margin: auto;">
           ※1 責任開始日は、申込受付完了が月初～15日の場合は<span style="font-weight: bold; color: #e58882;">翌月の1日</span>、
           16日～月末の場合は<span style="font-weight: bold; color: #e58882;">翌々月の1日</span>となります。
@@ -91,22 +95,11 @@
         <p style="font-size: 0.8rem; text-indent: -2em; padding-left: 2em; margin: auto;">
           ※3 表示された保険金額は初年度の保険金額となります。次年度以降の保険金額は、更新日時点の年齢を基準に計算されます。
         </p>
-      </td>
-    </tr>
-    <!--
-    <tr style="border-bottom: none;">
-      <td colspan="2">
-        <p class="formbottom">
-          <input type="button" value="計算" onclick="calculate()" class="btns">
-        </p>
-      </td>
-    </tr>
-    -->
-   </table>
-
+    
     <p class="formbottom">
       <a href="quotation01.html"><input type="button" value="保険金額固定コースはこちら" class="btns"></a>
     </p>
+      </div>
     
  </form>
 
