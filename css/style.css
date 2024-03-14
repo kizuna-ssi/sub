@@ -1465,16 +1465,16 @@ form .btns:hover{
 
 .ac-box{
 width: auto;
-margin: 30px auto 5px;
+margin: 30px auto 30px;
 }
 
 .ac-box label{
-max-width: 385px;
+max-width: 300px;
 font-size: 16px;
 font-weight: bold;
 text-align: center;
-background: #f05689;
-margin: auto;
+background: #e58882;
+margin: 30px auto 30px auto;
 line-height: 50px;
 position: relative;
 display: block;
