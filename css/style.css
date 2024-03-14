@@ -1463,3 +1463,72 @@ form .btns:hover{
 	bottom: 80px !important;
 }
 
+.ac-box{
+width: auto;
+margin: 30px auto 5px;
+}
+
+.ac-box label{
+max-width: 385px;
+font-size: 16px;
+font-weight: bold;
+text-align: center;
+background: #f05689;
+margin: auto;
+line-height: 50px;
+position: relative;
+display: block;
+height: 50px;
+border-radius: 8px;
+cursor: pointer;
+color: #fff;
+transition: all 0.5s;
+}
+
+.ac-box label:hover{
+background: rgba( 240, 86, 137, 0.55 );
+-webkit-transition: all .3s;
+transition: all .3s;
+}
+
+.ac-box input{
+display: none;
+}
+
+.ac-box label:after{
+color: #fff;
+font-family:"FontAwesome";
+content:" \f078";
+}
+
+.ac-box input:checked ~ label::after {
+color: #fff;
+font-family:"FontAwesome";
+content:" \f077";
+}
+
+.ac-box div{
+height: 0px;
+padding: 0px;
+overflow: hidden;
+opacity: 0;
+transition: 0.5s;
+}
+
+.ac-box input:checked ~ div{
+height: auto;
+padding: 5px;
+background: #eaeaea;
+opacity: 1;
+}
+
+.ac-box div p{
+color: #777;
+line-height: 23px;
+font-size: 14px;
+padding: 20px;
+text-align: justify;
+}
+.ac-small p{
+margin-bottom: 0px;
+}
