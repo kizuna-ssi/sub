@@ -113,14 +113,3 @@ $(function(){
         $('#footer').load('https://kizuna-ssi.net/footer.html'); // #footerにfooter.htmlを読み込む
         });
 
-
-//　モーダル
-$(function() {
-  $('#exampleModal').on('show.bs.modal', function () {
-    var title = $('#formTitle').val()
-    var body = $('#formBody').val()
-    var modal = $(this)
-    modal.find('#modalTitle').text(title)
-    modal.find('#modalBody').text(body)
-  })
-})
