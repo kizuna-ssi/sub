@@ -24,8 +24,7 @@
     <div class="center">
       <img src="https://kizuna-ssi.github.io/sub/images/kizuna_ssi_top.png" style="width: 25%; min-width: 250px; ">
       <p><br><span style="font-size: 1.5em; font-weight: bold; color: #ED6C00;">保険料定額コース</span></p>
-      <p>生年月日、性別、保険料を選択すると、保険金額が表示されます。<br>
-        一覧で見る場合は<a href="https://kizuna-ssi.net/pdf/hokenkin_itiran.pdf" target="_blank">こちら（PDF）</a></p>
+      <p>一覧で見る場合は<a href="https://kizuna-ssi.net/pdf/hokenkin_itiran.pdf" target="_blank">こちら（PDF）</a></p>
     </div> 
   <table class="ta1">
     <tr>
@@ -36,6 +35,12 @@
          <select class="birthday-month" style="width: 50px;" onchange="calculate()"></select>月
          <select class="birthday-day" style="width: 50px;" onchange="calculate()">></select>日
       </div>
+         <p style="font-size: 0.9rem; margin-bottom: 8px; margin-left: 8px;">
+           本日お申込みされた場合の責任開始日は「
+           <span id="ageDisplay2" type="text" readonly="" style="font-weight: bold; color: #e58882;"></span> 」です。<br>
+           責任開始日時点の年齢（契約年齢）は「
+           <span id="ageDisplay1" type="text" readonly="" style="font-weight: bold; color: #e58882;"></span> 歳」です。
+         </p>
       </td>
     </tr>
     <tr>
@@ -76,13 +81,15 @@
     <tr>
       <td colspan="2">
         <p style="font-size: 0.8rem; text-indent: -2em; padding-left: 2em; margin: auto;">
-          ※1 表示された保険金額は初年度の保険金額となります。次年度以降の保険金額は、更新日時点の年齢を基準に計算されます。
+          ※1 責任開始日は、申込受付完了が月初～15日の場合は<span style="font-weight: bold; color: #e58882;">翌月の1日</span>、
+          16日～月末の場合は<span style="font-weight: bold; color: #e58882;">翌々月の1日</span>となります。
         </p>
         <p style="font-size: 0.8rem; text-indent: -2em; padding-left: 2em; margin: auto;">
-          ※2 契約年齢とは責任開始日時点の年齢をいいます。契約年齢が50歳から80歳までの方がお申込みいただけます。
+          ※2 契約年齢とは責任開始日時点の年齢をいいます。
+          <span style="font-weight: bold; color: #e58882;">契約年齢が50歳から80歳まで</span>の方がお申込みいただけます。
         </p>
         <p style="font-size: 0.8rem; text-indent: -2em; padding-left: 2em; margin: auto;">
-          ※3 責任開始日は、申込受付完了が月初～15日の場合は翌月の1日、16日～月末の場合は翌々月の1日となります。
+          ※3 表示された保険金額は初年度の保険金額となります。次年度以降の保険金額は、更新日時点の年齢を基準に計算されます。
         </p>
       </td>
     </tr>
