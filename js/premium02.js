@@ -1,7 +1,7 @@
  function calculate() {
     var a, b, c, d;
     a = calculateAge(); 
-    b = document.querySelector('input[name="gender"]:checked').value;
+    b = document.querySelector('input[name="entry.247631984"]:checked').value;
     c = document.querySelector('input[name="amount"]:checked').value;
     d = document.querySelector('input[name="times"]:checked').value;
 
