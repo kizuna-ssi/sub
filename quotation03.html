@@ -20,7 +20,8 @@
 
 <h2>QUOTATION<span>お見積り</span></h2>
 
-  <form class="form">
+  <form class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfTxt0Q5c8bCvwLO1n_i7TEFXXLB54yO15bt5kYqKh1YtzSJg/formResponse"
+    method="post" target="hidden_iframe" onsubmit="submitted=true;">
     <div class="center">
       <img src="https://kizuna-ssi.github.io/sub/images/kizuna_ssi_top.png" style="width: 25%; min-width: 250px;">
       <p><br><span style="font-size: 1.5em; font-weight: bold; color: #0D955A;">保険金額固定コース</span></p>
@@ -31,9 +32,9 @@
       <th>生年<br class="br-sp">月日</th>
        <td>
       <div class="form-select-wrap">
-         <select class="birthday-year" style="width: 90px;" onchange="calculate()"></select>年
-         <select class="birthday-month" style="width: 50px; onchange="calculate()"></select>月
-         <select class="birthday-day" style="width: 50px; onchange="calculate()"></select>日
+         <select class="birthday-year" style="width: 90px;" onchange="calculate()" name="entry.340079442"></select>年
+         <select class="birthday-month" style="width: 50px; onchange="calculate()" name="entry.305694044"></select>月
+         <select class="birthday-day" style="width: 50px; onchange="calculate()" name="entry.808482843"></select>日
       </div>      
       </td>
     </tr>
@@ -41,8 +42,8 @@
       <th>性別</th>
       <td>
         <div class="radio01">
-        <input type="radio" id="male" name="gender" onchange="calculate()" value="1"><label for="male">男性</label>
-        <input type="radio" id="female" name="gender" onchange="calculate()" value="2"><label for="female">女性</label>
+        <input type="radio" id="male" name="gender" onchange="calculate()" value="1"><label for="male" name="entry.247631984">男性</label>
+        <input type="radio" id="female" name="gender" onchange="calculate()" value="2"><label for="female" name="entry.1981295632">女性</label>
         </div>
       </td>
     </tr>
@@ -50,10 +51,10 @@
       <th>保険<br class="br-sp">金額</th>
       <td>
         <div class="radio01">
-        <input type="radio" id="50" name="amount" onchange="calculate()" value="0"><label for="50">50万円</label>
-        <input type="radio" id="100" name="amount" onchange="calculate()" value="1"><label for="100">100万円</label>
-        <input type="radio" id="200" name="amount" onchange="calculate()" value="2"><label for="200">200万円</label>
-       <input type="radio" id="300" name="amount" onchange="calculate()" value="3"><label for="300">300万円</label>
+        <input type="radio" id="50" name="amount" onchange="calculate()" value="0"><label for="50" name="entry.76484243">50万円</label>
+        <input type="radio" id="100" name="amount" onchange="calculate()" value="1"><label for="100" name="entry.1922777999">100万円</label>
+        <input type="radio" id="200" name="amount" onchange="calculate()" value="2"><label for="200" name="entry.2111464685">200万円</label>
+       <input type="radio" id="300" name="amount" onchange="calculate()" value="3"><label for="300" name="entry.233959212">300万円</label>
         </div>
      </td>
     </tr>
@@ -61,8 +62,8 @@
       <th>払込<br class="br-sp">回数</th>
       <td>
         <div class="radio01">
-        <input type="radio" id="month" name="times" onchange="calculate()" value="1"><label for="month">月払</label>
-        <input type="radio" id="year" name="times" onchange="calculate()" value="2"><label for="year">年払</label>
+        <input type="radio" id="month" name="times" onchange="calculate()" value="1"><label for="month" name="entry.886934120">月払</label>
+        <input type="radio" id="year" name="times" onchange="calculate()" value="2"><label for="year" name="entry.2056479843">年払</label>
         </div>
       </td>
     </tr>
@@ -76,15 +77,15 @@
          <div class="c3" style="justify-content: center;">
            <span style="font-weight: bold; margin: auto 1px auto 1px;">保険料 ：　</span>
          <div style="display:none"><input id="premium" type="text" readonly=""></div>
-         <div id="product" type="text" readonly="" style="font-size: 180%; color: #e58882; font-weight: bold;"></div>
+         <div id="product" type="text" readonly="" style="font-size: 180%; color: #e58882; font-weight: bold;" name="entry.1610880795"></div>
          </div>
         
         <br>
          <p style="font-size: 0.8rem; text-align:center;">
            本日お申込みされた場合の責任開始日は<br class="br-sp">「
-           <span id="ageDisplay2" type="text" readonly="" style="font-weight: bold; color: #e58882;"></span> 」です。<br>
+           <span id="ageDisplay2" type="text" readonly="" style="font-weight: bold; color: #e58882;" name="entry.1323225633"></span> 」です。<br>
            責任開始日時点の年齢（契約年齢）は<br class="br-sp">「
-           <span id="ageDisplay1" type="text" readonly="" style="font-weight: bold; color: #e58882;"></span> 歳」です。
+           <span id="ageDisplay1" type="text" readonly="" style="font-weight: bold; color: #e58882;" name="entry.1000152286"></span> 歳」です。
          </p>
         
         <hr>
@@ -106,16 +107,17 @@
   
   </div>
 
-
     <p class="formbottom">
       <a href="quotation02.html"><input type="button" value="保険料定額コースはこちら" class="btns"></a>
     </p>
 
-    
+    <p class="formbottom">
+      <input type="submit" value="送信する" class="btns submit">
+      <input type="reset" value="リセット" class="btns reset">
+    </p>   
  </form>
 
 </section>
-
 </main>
     
     <div id="footer"></div>
@@ -147,8 +149,9 @@
 
 <script src="js/calculate_age.js"></script>
 <script src="js/premium.js"></script>
+
+<script>let submitted = false;</script>
+<iframe name="hidden_iframe" style="display:none;" onload="if(submitted){window.location='finish.html';}"></iframe>
   
 </body>
-  
-
 </html>
