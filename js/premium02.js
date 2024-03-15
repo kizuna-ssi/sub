@@ -3,7 +3,7 @@
     a = calculateAge(); 
     b = document.querySelector('input[name="entry.247631984"]:checked').value;
     c = document.querySelector('input[name="entry.76484243"]:checked').value;
-    d = document.querySelector('input[name="times"]:checked').value;
+    d = document.querySelector('input[name="entry.886934120"]:checked').value;
 
     if (a == 50 && b == 1 && c == 1 && d == 1) {
       document.getElementById("premium").value = "580";
