@@ -19,7 +19,8 @@
 
 <section>
 
-<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeW9ZJfPYoBAqfRQfnJbdI4vDqNNxtfYtOgT8b2yNBrzyZC5w/formResponse" method="post">
+<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeW9ZJfPYoBAqfRQfnJbdI4vDqNNxtfYtOgT8b2yNBrzyZC5w/formResponse"
+  method="post" target="hidden_iframe" onsubmit="submitted=true;">
 
 <h2>CONTACT<span>お問い合わせ</span></h2>
 
@@ -100,5 +101,8 @@
   }
 </script>
 
+<script>let submitted = false;</script>
+<iframe name="hidden_iframe" style="display:none;" onload="if(submitted){window.location='finish.html';}"></iframe>
+  
 </body>
 </html>
