@@ -2,7 +2,7 @@
     var a, b, c, d;
     a = calculateAge(); 
     b = document.querySelector('input[name="entry.247631984"]:checked').value;
-    c = document.querySelector('input[name="amount"]:checked').value;
+    c = document.querySelector('input[name="entry.76484243"]:checked').value;
     d = document.querySelector('input[name="times"]:checked').value;
 
     if (a == 50 && b == 1 && c == 1 && d == 1) {
