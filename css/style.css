@@ -1492,7 +1492,7 @@ background: #e58882;
 transition: all .3s;
 }
 
-.ac-box input{
+.ac-box #ac-1 input{
 display: none;
 }
 
@@ -1504,7 +1504,7 @@ opacity: 0;
 transition: 0.5s;
 }
 
-.ac-box input:checked ~ .open{
+.ac-box #ac-1 input:checked ~ .open{
 height: auto;
 width: 100%;
 max-width: 800px;
