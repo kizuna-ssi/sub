@@ -68,7 +68,8 @@
 
     var cookies = document.cookie;
     var cookiesArray = cookies.split(';');
-    var pass = 'a2l6dW5hLXNzaS0xMDE=';
+    var pass1 = 'a2l6dW5hLXNzaS0xMDI=';
+    var pass2 = 'a2l6dW5hLXNzaS0xMDE=';
 
     for(var c of cookiesArray){
       var cArray = c.split('=');
@@ -76,11 +77,13 @@
         UserInput = decodeURIComponent(cArray[1]);
       }
     }
-    if(!(UserInput && UserInput == window.atob(pass))){
+
+    // パスワードの確認
+    if(!(UserInput && (UserInput == window.atob(pass1) || UserInput == window.atob(pass2)))){
       UserInput = prompt("パスワードを入力して下さい:","");
     }
 
-    if(UserInput != window.atob(pass)){
+    if(!(UserInput == window.atob(pass1) || UserInput == window.atob(pass2))){
       document.body.innerHTML = "403 Forbidden";
     }else{
       var now = new Date();
@@ -90,6 +93,7 @@
     document.body.style.display = null;
   }
 </script>
+
 
 </body>
 </html>
