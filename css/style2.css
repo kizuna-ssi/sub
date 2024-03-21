@@ -124,7 +124,7 @@ header {
 	display: flex;					/*flexボックスを使う指定*/
 	justify-content: space-between;	/*並びかたの種類の指定*/
 	align-items: center;			/*垂直揃えの指定。天地中央に配置されるように。*/
-	background: #e58882;			/*背景色*/
+	background: #002776;			/*背景色*/
 	position: fixed; z-index: 1;	/*スクロールしても動かないようにする指定*/
 	width: 100%;
 	padding: 0 3%;					/*上下、左右へのヘッダー内の余白*/
@@ -293,7 +293,7 @@ main h2 {
 	font-size: 2.5em;			/*文字サイズ。3倍。*/
 	text-align: center;		/*文字をセンタリング*/
 	letter-spacing: 0.2em;	/*文字間隔を少しだけ広くとる設定*/
-	color: #e58882;			/*文字色*/
+	color: #002776;			/*文字色*/
 	font-family: 'Lato';	/*GoogleFontsの指定*/
 	font-weight: 400;		/*文字の太さ*/
 }
@@ -309,7 +309,7 @@ main h2 span {
 /*mainブロック内のh3タグ*/
 main h3 {
 	margin: 0 0 1em;		/*上、左右、下へのタグの外にとるスペース*/
-	color: #e58882;			/*文字色*/
+	color: #002776;			/*文字色*/
 }
 
 /*mainブロックのpタグ*/
@@ -483,11 +483,11 @@ footer .pr {display: block;}
 .list2 h4 {
 	margin: 0;				/*デフォルトマージンを一旦リセット*/
 	margin-bottom: 10px;	/*下に少し余白を作る*/
-	color: #e58882;			/*文字色*/
+	color: #002776;			/*文字色*/
 }
 
 .list2 h4 a {
-	color: #e58882;			/*リンクテキストの文字色*/
+	color: #002776;			/*リンクテキストの文字色*/
 }
 
 .list2 h4 a:hover {
@@ -567,7 +567,7 @@ dl.line dd {
 .faq dt::before {
 	font-family: "Font Awesome 5 Free";	/*Font Awesomeを使う指定*/
 	content: "\f059";		/*使いたいアイコン名をここで指定。Font Awesomeに記載されています。詳しくは当テンプレートのマニュアルを読んで下さい。*/
-	color: #e58882;			/*アイコンの色*/
+	color: #002776;			/*アイコンの色*/
 	padding-right: 1em;		/*アイコンとテキストの間の余白*/
 }
 
@@ -622,7 +622,7 @@ a.btn1 {
 	color: #444;
 }
 a.btn2 {
-	background: #e58882;
+	background: #002776;
 	color: #fff;
 }
 .radius {
@@ -715,7 +715,7 @@ a:hover.btn1, a:hover.btn2 {
 /*その他
 ---------------------------------------------------------------------------*/
 .clearfix::after {content: "";display: block;clear: both;}
-.color-theme, .color-theme a {color: #e58882 !important;}
+.color-theme, .color-theme a {color: #002776 !important;}
 .color-check, .color-check a {color: #f00 !important;}
 .c {text-align: center !important;}
 .ws {width: 95%;display: block;background-color:#f2d5d5;border: none;height:40px;padding:10px;}
@@ -900,7 +900,7 @@ html, body {
 
 /*bg1設定。サンプルテンプレートでは「サービス」と書いてあるマーク*/
 #new dt span.icon-bg1 {
-	background: #e58882;	/*背景色*/
+	background: #002776;	/*背景色*/
 }
 
 /*記事(dd)設定*/
@@ -1010,13 +1010,13 @@ a.btn {
 	padding: 1em 1em;
 	font-weight: nomal;
 	font-size: 110%;
-	border: 2px solid #e58882;
+	border: 2px solid #002776;
 	color: #fff;
 	transition: 0.5s;
-	background:#e58882;
+	background:#002776;
 }
 a.btn:hover {
-	color: #e58882;
+	color: #002776;
 	background: #fff;
 }
 
@@ -1040,12 +1040,12 @@ form .btns{
 	vertical-align: middle;
 	margin: 0 10px;
 	padding: 6px 25px;
-	color: #e58882;
+	color: #002776;
 	font-weight: bold;
 	letter-spacing: 0.5pt;
 	text-decoration: none;
 	background-color: #ffffff;
-	border: 1px solid #e58882;
+	border: 1px solid #002776;
 	cursor: pointer;
 	transition-duration:0.3s;
     -webkit-transition-duration:0.3s;
@@ -1055,7 +1055,7 @@ form .btns{
 } 
 form .btns:hover{
     color: #ffffff;
-    background-color: #e58882;
+    background-color: #002776;
 }
   .form-select-wrap{
    display: flex;
@@ -1066,10 +1066,10 @@ form .btns:hover{
   .form-select-wrap > select{
    padding: 8px 4px;
    margin: 10px 5px 5px 5px;
-   border: 1px solid #e58882;
+   border: 1px solid #002776;
    border-radius: 4px;
    font-size: 17px;
-   color: #e58882;
+   color: #002776;
    text-align: center;
 }
 
@@ -1175,7 +1175,7 @@ form .btns:hover{
 }
 
 .radio01 input[type="radio"]:checked + label {
-	background-color: #e58882;
+	background-color: #002776;
 	color: #fff;
 }
 
@@ -1359,7 +1359,7 @@ form .btns:hover{
   border: dashed 2px #333333;
 }
 .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput {
-  background: #e58882;
+  background: #002776;
 }
 .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput::before {
   content: "";
@@ -1402,7 +1402,7 @@ form .btns:hover{
   border: dashed 2px #333333;
 }
 .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput2 {
-  background: #e58882;
+  background: #002776;
 }
 .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput2::before {
   content: "";
@@ -1477,7 +1477,7 @@ max-width: 300px;
 font-size: 16px;
 font-weight: bold;
 text-align: center;
-background: #e58882;
+background: #002776;
 margin: 30px auto 30px auto;
 line-height: 50px;
 position: relative;
@@ -1490,7 +1490,7 @@ transition: all 0.5s;
 }
 
 .ac-box label:hover{
-background: #e58882;
+background: #002776;
 -webkit-transition: all .3s;
 transition: all .3s;
 }
@@ -1514,7 +1514,7 @@ max-width: 800px;
 margin: auto;
 padding: 4%;
 background: #ffff;
-border: 3px solid #e58882;
+border: 3px solid #002776;
 opacity: 1;
 }
 
