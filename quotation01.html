@@ -157,9 +157,10 @@
 <script src="js/premium.js"></script>
 
 <script>
-  // ボタン要素の取得
-  const incrementYearButton = document.createElement('button000');
+  // ボタン要素の作成
+  const incrementYearButton = document.createElement('button');
   incrementYearButton.textContent = '年を追加';
+  incrementYearButton.classList.add('button000'); // クラスを追加
   incrementYearButton.addEventListener('click', () => {
     // 生年月日の年の要素を取得
     const birthdayYearSelect = document.querySelector('.birthday-year');
@@ -175,8 +176,9 @@
   });
 
   // ボタンをHTMLに追加
-  document.querySelector('.center').appendChild(incrementYearButton);
+  document.querySelector('.button000').appendChild(incrementYearButton);
 </script>
+
   
 </body>
 </html>
