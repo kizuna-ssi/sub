@@ -91,7 +91,7 @@ main > article {
 
 /*c2内のh2見出し*/
 .c2 h2 {
-	font-size: 2em;
+	font-size: 2.5em;
 }
 
 /*小さい端末で見た場合（１カラムになった際）に、画像を常に先頭に持ってくる*/
@@ -290,7 +290,7 @@ main {
 main h2 {
 	margin: 0 0 1em;		/*上、左右、下へのタグの外にとるスペース*/
 	line-height: 1.5;		/*行間を少し狭く*/
-	font-size: 3em;			/*文字サイズ。3倍。*/
+	font-size: 2.5em;			/*文字サイズ。3倍。*/
 	text-align: center;		/*文字をセンタリング*/
 	letter-spacing: 0.2em;	/*文字間隔を少しだけ広くとる設定*/
 	color: #e58882;			/*文字色*/
