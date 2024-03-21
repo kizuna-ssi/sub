@@ -153,8 +153,28 @@
 
 <script src="js/calculate_age.js"></script>
 <script src="js/premium.js"></script>
+
+<script>
+  // ボタン要素の取得
+  const incrementYearButton = document.createElement('button');
+  incrementYearButton.textContent = '年を追加';
+  incrementYearButton.addEventListener('click', () => {
+    // 生年月日の年の要素を取得
+    const birthdayYearSelect = document.querySelector('.birthday-year');
+    // 選択された年を取得
+    let selectedYear = parseInt(birthdayYearSelect.value);
+    // 1年追加
+    selectedYear++;
+    // 年の選択肢を更新
+    birthdayYearSelect.value = selectedYear.toString();
+    // 年が変更されたので日付計算を実行
+    changeTheDay();
+    calculateAge();
+  });
+
+  // ボタンをHTMLに追加
+  document.querySelector('.center').appendChild(incrementYearButton);
+</script>
   
 </body>
-  
-
 </html>
