@@ -1533,13 +1533,4 @@ opacity: 1;
 }
 }
 
-@media print{
- *{
-     -webkit-print-color-adjust: exact;
- }
-	
-  .no-print{
-    display: none;
-  }
-	
-}
+
