@@ -1,12 +1,9 @@
 @media print{
  *{
-     -webkit-print-color-adjust: exact;	         
+     -webkit-print-color-adjust: exact;
+	 transform: scale(0.7);
+	 margin: 0;
  }
-
-body {
-	transform: scale(0.7);
-	margin: 0;
-}
 	
   .no-print{
     display: none;
