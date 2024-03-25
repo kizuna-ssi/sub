@@ -1024,10 +1024,11 @@ a.btn:hover {
   text-align: center;
   margin: 30px auto; 
 }
+@media print, screen and (min-width: 900px)
 .br-sp {
     display: none;
 }
-@media (max-width: 900px) {
+@media only screen (max-width: 899px) {
     .br-sp {
         display: block;
     }
