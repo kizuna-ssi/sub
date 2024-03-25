@@ -1532,3 +1532,9 @@ opacity: 1;
 	margin: auto auto auto 20px;
 }
 }
+
+@media print{
+ *{
+     -webkit-print-color-adjust: exact;
+ }
+}
