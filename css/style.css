@@ -1028,7 +1028,7 @@ a.btn:hover {
 .br-sp {
     display: none;
 }
-@media only screen (max-width: 899px) {
+@media screen and (max-width:899px) {
     .br-sp {
         display: block;
     }
