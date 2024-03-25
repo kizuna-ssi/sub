@@ -1537,4 +1537,9 @@ opacity: 1;
  *{
      -webkit-print-color-adjust: exact;
  }
+	
+  .no-print{
+    display: none;
+  }
+	
 }
