@@ -4,7 +4,7 @@
  }
 
 body {
-_zoom: 0.68;
+	transform: scale(0.7);
 }
 	
   .no-print{
