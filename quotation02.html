@@ -17,8 +17,9 @@
 <main>
 
 <section>
-
+  <div class="no-print">
 <h2>QUOTATION<span>お見積り</span></h2>
+  </div>
 
   <form class="form">
     <div class="center">
@@ -28,7 +29,9 @@
   <table class="ta1">
     <tr>
       <td colspan="2" style="padding-left: 7%;">
+        <div class="no-print">
         生年月日、性別、保険料を選択し、見積結果をクリックしてください。
+        </div>
       </td>
     </tr>
     <tr>
@@ -79,7 +82,7 @@
          <div id="product2" type="text" readonly="" style="font-size: 180%; color: #e58882; font-weight: bold;"></div>
          </div>
 
-        <br>
+
          <p style="font-size: 0.8rem; text-align:center;">
            本日お申込みされた場合の責任開始日は<br class="br-sp">「
            <span id="ageDisplay2" type="text" readonly="" style="font-weight: bold; color: #e58882;"></span> 」です。<br>
@@ -103,14 +106,21 @@
           ※4 引受不可と表示された場合、誠に残念ながら選択された条件でのお申し込みはできません。
         </p>
 
+                
+        <div class="no-print">  
+        <p class="formbottom">
+          <a href="javascript:void(0)" onclick="window.print();return false;" class="btns" style="width: 50%; min-width: 250px;">
+            印刷する</a>
+        </p>
         <p class="formbottom">
           <a href="https://kizuna-ssi.net/pdf/hokenkin_itiran.pdf" target="_blank" class="btns" style="width: 50%; min-width: 250px;">
-            一覧で見る場合はこちら（PDF）</a>
+            一覧で見る（PDF）</a>
         </p>
         <p class="formbottom" style="margin-bottom: 10px;">
           <a href="https://kizuna-ssi.net/document_request.html" class="btns" style="width: 50%; min-width: 250px;">
-            資料請求はこちら</a>
+            資料請求する</a>
         </p>  
+          </div>
       </div>
     </div>
     
