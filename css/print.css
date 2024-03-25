@@ -1,8 +1,11 @@
 @media print{
  *{
      -webkit-print-color-adjust: exact;	         
-
  }
+
+body {
+_zoom: 0.68;
+}
 	
   .no-print{
     display: none;
