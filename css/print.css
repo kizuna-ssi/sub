@@ -7,8 +7,8 @@
     display: none;
   }
 
-　.br-sp {
-    display: none;
+p {
+    break-inside: avoid;
 }
 	
 }
