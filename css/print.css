@@ -1,8 +1,7 @@
 @media print{
  *{
      -webkit-print-color-adjust: exact;	         
-	 zoom: 0.70;
-	 size: A4;
+
  }
 	
   .no-print{
