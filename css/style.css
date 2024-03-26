@@ -1590,8 +1590,6 @@ opacity: 1;
 
 
 .application .ta4 tr{
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 }
 
@@ -1605,6 +1603,8 @@ opacity: 1;
 	text-align: center;
 	font-size: 0.8em;
 	padding: 5px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
 }
 
 
