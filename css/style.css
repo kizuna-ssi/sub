@@ -1583,8 +1583,7 @@ opacity: 1;
 .application .ta4 {
 	border-top: 1px solid #ccc;
 	width: 100%;
-	max-width: 800px;
-	min-width: 600px;
+	min-width: 500px;
 	table-layout: fixed;
 	margin: auto; 
 }
@@ -1605,6 +1604,7 @@ opacity: 1;
 .application .ta4 td{
 	text-align: center;
 	font-size: 0.8em;
+	padding: 5px;
 }
 
 
