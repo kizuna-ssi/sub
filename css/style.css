@@ -1610,15 +1610,19 @@ opacity: 1;
 .application .ta5 {
 	border-top: 1px solid #ccc;
 	width: 100%;
-	margin: 20px; 
-	display: flex;
-	justify-content: flex-end;
+	min-width: 500px;
+	table-layout: fixed;
+	margin: auto; 
 }
 
 .application .ta5 tr{
 	border-bottom: 1px solid #ccc;
 }
-
+.application .ta4 th{
+	text-align: center;
+	font-size: 0.8em;
+	background-color: #eeeeee;
+}
 .application .ta5 td{
 	text-align: center;
 	font-size: 0.8em;
