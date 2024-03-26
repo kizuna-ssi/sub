@@ -1,6 +1,7 @@
 @media print{
  *{
      -webkit-print-color-adjust: exact;
+	 margin: 0;
  }
 	
   .no-print{
