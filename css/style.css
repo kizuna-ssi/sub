@@ -1656,3 +1656,19 @@ opacity: 1;
 	color: #555;
 	margin-bottom: 0px;
 }
+
+.application .select-day {
+	display: flex;
+	max-width: 300px;
+	align-items: center;
+}
+
+.application .select-day > select{
+	padding: 8px 4px;
+        margin: 10px 5px 5px 5px;
+        border: 1px solid #555;
+        border-radius: 4px;
+        font-size: 17px;
+        color: #555;
+        text-align: center;
+}
