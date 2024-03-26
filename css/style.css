@@ -1607,6 +1607,14 @@ opacity: 1;
 	border-right: 1px solid #ccc;
 }
 
+.application .ta5 {
+	border-top: 1px solid #ccc;
+	width: 100%;
+	max-width: 300px;
+	margin: 20px; 
+	display: flex;
+	justify-content: flex-end;
+}
 
 .application p {
 	font-size: 0.8em;
