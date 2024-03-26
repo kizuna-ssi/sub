@@ -16,3 +16,10 @@ main{
 @page {
   margin: 0;
 }
+
+@media screen{
+	
+  .no-screen{
+    display: none;
+  }	
+}
