@@ -1585,6 +1585,7 @@ opacity: 1;
 	width: 100%;
 	max-width: 800px;
 	min-width: 600px;
+	table-layout: fixed;
 	margin: auto; 
 }
 
