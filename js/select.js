@@ -1,18 +1,19 @@
 // 大分類、小分類の選択肢を配列でそれぞれ用意
 const categories = [
-  'エコグッズ',
-  '衛生グッズ',
-  '防災グッズ'
+  '保険金額固定コース（月払）',
+  '保険金額固定コース（年払）',
+  '保険料定額コース（月払）',
+  '保険料定額コース（年払）'
 ];
 
 // 小分類は、大分類と紐付けるためにオブジェクト型を使う
 const subCategories = [
-  {category: 'エコグッズ', name: '天然素材'},
-  {category: 'エコグッズ', name: 'リサイクル素材'},
-  {category: '衛生グッズ', name: 'マスク'},
-  {category: '衛生グッズ', name: '除菌'},
-  {category: '防災グッズ', name: 'セット物'},
-  {category: '防災グッズ', name: 'ライト'}
+  {category: '保険金額固定コース（月払）', name: '天然素材'},
+  {category: '保険金額固定コース（月払）', name: 'リサイクル素材'},
+  {category: '保険金額固定コース（年払）', name: 'マスク'},
+  {category: '保険金額固定コース（年払）', name: '除菌'},
+  {category: '保険料定額コース（月払）', name: 'セット物'},
+  {category: '保険料定額コース（年払', name: 'ライト'}
 ];
 
 const categorySelect1 = document.getElementById('category-select-1');
