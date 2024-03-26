@@ -1552,6 +1552,7 @@ opacity: 1;
 }
 
 .application .ta2 td{
+	padding: 40px;
 	text-align: left;
 }
 
@@ -1587,4 +1588,15 @@ opacity: 1;
 	font-size: 0.8em;
 	padding: 1px 1px 1px 1px;
 	margin: 1px 1px 1px 1px;
+}
+
+.application h2 {
+	font-size: 2.0em;
+	color: #555
+}
+
+.application h3 {
+	font-size: 1.0em;
+	font-weight: bold;
+	color: #555
 }
