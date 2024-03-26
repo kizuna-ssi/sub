@@ -1,41 +1,52 @@
-function course() {
-var array = new Array();
-array[''] = new Array({cd:"0", label:"選択してください"});
-array["01"] = new Array(
-  {cd:"1", label:"死亡保険金50万円"},
-  {cd:"2", label:"死亡保険金100万円"},
-  {cd:"3", label:"死亡保険金200万円"},
-  {cd:"4", label:"死亡保険金300万円"},
-);
-array["02"] = new Array(
-  {cd:"1", label:"死亡保険金50万円"},
-  {cd:"2", label:"死亡保険金100万円"},
-  {cd:"3", label:"死亡保険金200万円"},
-  {cd:"4", label:"死亡保険金300万円"},
-);
-array["03"] = [
-  {cd:"1", label:"月額保険料1,000円"},
-  {cd:"2", label:"月額保険料2,000円"},
-  {cd:"3", label:"月額保険料3,000円"},
-  {cd:"4", label:"月額保険料5,000円"},
-];
-array["04"] = [
-  {cd:"1", label:"年額保険料10,000円"},
-  {cd:"2", label:"年額保険料20,000円"},
-  {cd:"3", label:"年額保険料30,000円"},
-  {cd:"4", label:"年額保険料50,000円"},
+// 大分類、小分類の選択肢を配列でそれぞれ用意
+const categories = [
+  'エコグッズ',
+  '衛生グッズ',
+  '防災グッズ'
 ];
 
-document.getElementById('course').onchange = function(){
-  amount-premium = document.getElementById("amount-premium");
-  amount-premium.options.length = 0
-  var changedPref = course.value;
-  for (let i = 0; i < array[changedPref].length; i++) {
-    var op = document.createElement("option");
-    value = array[changedPref][i]
-    op.value = value.cd;
-    op.text = value.label;
-    amount-premium.appendChild(op);
-  }
-}
-}
+// 小分類は、大分類と紐付けるためにオブジェクト型を使う
+const subCategories = [
+  {category: 'エコグッズ', name: '天然素材'},
+  {category: 'エコグッズ', name: 'リサイクル素材'},
+  {category: '衛生グッズ', name: 'マスク'},
+  {category: '衛生グッズ', name: '除菌'},
+  {category: '防災グッズ', name: 'セット物'},
+  {category: '防災グッズ', name: 'ライト'}
+];
+
+const categorySelect1 = document.getElementById('category-select-1');
+const subCategorySelect1 = document.getElementById('sub-category-select-1');
+
+// 大分類のプルダウンを生成
+categories.forEach(category => {
+  const option = document.createElement('option');
+  option.textContent = category;
+
+  categorySelect1.appendChild(option);    
+});
+
+// 大分類が選択されたら小分類のプルダウンを生成
+categorySelect1.addEventListener('input', () => {
+
+  // 小分類のプルダウンをリセット
+  const options = document.querySelectorAll('#sub-category-select-1 > option');
+  options.forEach(option => {
+    option.remove();
+  });
+
+  // 小分類のプルダウンに「選択してください」を加える
+  const firstSelect = document.createElement('option');
+  firstSelect.textContent = '選択してください';
+  subCategorySelect1.appendChild(firstSelect);
+
+  // 大分類で選択されたカテゴリーと同じ小分類のみを、プルダウンの選択肢に設定する
+  subCategories.forEach(subCategory => {
+    if (categorySelect1.value == subCategory.category) {
+      const option = document.createElement('option');
+      option.textContent = subCategory.name;
+      
+      subCategorySelect1.appendChild(option);
+    }
+  });
+});
