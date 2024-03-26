@@ -8,12 +8,22 @@ const categories = [
 
 // 小分類は、大分類と紐付けるためにオブジェクト型を使う
 const subCategories = [
-  {category: '保険金額固定コース（月払）', name: '天然素材'},
-  {category: '保険金額固定コース（月払）', name: 'リサイクル素材'},
-  {category: '保険金額固定コース（年払）', name: 'マスク'},
-  {category: '保険金額固定コース（年払）', name: '除菌'},
-  {category: '保険料定額コース（月払）', name: 'セット物'},
-  {category: '保険料定額コース（年払', name: 'ライト'}
+  {category: '保険金額固定コース（月払）', name: '死亡保険金50万円'},
+  {category: '保険金額固定コース（月払）', name: '死亡保険金100万円'},
+  {category: '保険金額固定コース（月払）', name: '死亡保険金200万円'},
+  {category: '保険金額固定コース（月払）', name: '死亡保険金300万円'},
+  {category: '保険金額固定コース（年払）', name: '死亡保険金50万円'},
+  {category: '保険金額固定コース（年払）', name: '死亡保険金100万円'},
+  {category: '保険金額固定コース（年払）', name: '死亡保険金200万円'},
+  {category: '保険金額固定コース（年払）', name: '死亡保険金300万円'},
+  {category: '保険料定額コース（月払）', name: '月額保険料1,000円'},
+  {category: '保険料定額コース（月払）', name: '月額保険料2,000円'},
+  {category: '保険料定額コース（月払）', name: '月額保険料3,000円'},
+  {category: '保険料定額コース（月払）', name: '月額保険料5,000円'},
+  {category: '保険料定額コース（年払）', name: '年額保険料10,000円'},
+  {category: '保険料定額コース（年払）', name: '年額保険料20,000円'},
+  {category: '保険料定額コース（年払）', name: '年額保険料30,000円'},
+  {category: '保険料定額コース（年払）', name: '年額保険料50,000円'},
 ];
 
 const categorySelect1 = document.getElementById('category-select-1');
