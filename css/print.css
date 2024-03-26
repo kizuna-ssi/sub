@@ -16,7 +16,3 @@ main{
 @page {
   margin: 0;
 }
-
-.page:not(:last-child) {
-	break-after: page;
-}
