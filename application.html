@@ -169,7 +169,7 @@
           </td>
           <td>
     <div class="select-course">
-      <select style="width: 300px;" id="course" onchange="course()">
+      <select style="width: 300px;" id="course" onchange="viewChange();">
         <option value="">　</option>
         <option value="01">保険金額固定コース（月払）</option>
         <option value="02">保険金額固定コース（年払）</option>
@@ -186,6 +186,25 @@
     </table>
 
     <p style="text-align: center;">▼</p>
+
+
+<div class="input-block">
+  <div class="select-block">
+    <label>大分類：
+      <select id="category-select-1">
+        <option>選択してください</option>
+      </select>
+    </label>
+  </div>
+  <div class="select-block">
+    <label>小分類：
+      <select id="sub-category-select-1">
+        <option>選択してください</option>
+      </select>
+    </label>
+  </div>
+</div>
+
     
     <div class="no-print">           
     <p class="formbottom">  
