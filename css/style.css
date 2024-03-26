@@ -1537,6 +1537,7 @@ opacity: 1;
 .application .ta2 {
 	border: 1px solid #fff;
 	width: 100%;
+	max-width: 800px;
 	margin: auto; 
 }
 
