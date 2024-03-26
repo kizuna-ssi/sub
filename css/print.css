@@ -17,9 +17,6 @@ main{
   margin: 0;
 }
 
-@media screen{
-	
-  .no-screen{
-    display: none;
-  }	
+.page:not(:last-child) {
+	break-after: page;
 }
