@@ -1582,4 +1582,9 @@ opacity: 1;
 	padding: 1px 1px 1px 1px;
 	margin: 1px 1px 1px 1px;
 }
-	
+
+.application ul {
+	font-size: 0.8em;
+	padding: 1px 1px 1px 1px;
+	margin: 1px 1px 1px 1px;
+}
