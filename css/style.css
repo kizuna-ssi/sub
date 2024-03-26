@@ -1610,10 +1610,21 @@ opacity: 1;
 .application .ta5 {
 	border-top: 1px solid #ccc;
 	width: 100%;
-	max-width: 300px;
 	margin: 20px; 
 	display: flex;
 	justify-content: flex-end;
+}
+
+.application .ta5 tr{
+	border-bottom: 1px solid #ccc;
+}
+
+.application .ta5 td{
+	text-align: center;
+	font-size: 0.8em;
+	padding: 5px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
 }
 
 .application p {
