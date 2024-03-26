@@ -1,7 +1,6 @@
 @media print{
  *{
      -webkit-print-color-adjust: exact;
-	 margin: 0;
  }
 	
   .no-print{
@@ -12,7 +11,8 @@ main{
     padding-top: 0px;
   }
 
-	
 }
 
-
+@page {
+  margin: 0;
+}
