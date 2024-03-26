@@ -1559,6 +1559,7 @@ opacity: 1;
 .application .ta3 {
 	border-top: 1px solid #ccc;
 	width: 100%;
+	max-width: 800px;
 	margin: auto; 
 }
 
