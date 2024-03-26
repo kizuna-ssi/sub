@@ -169,15 +169,15 @@
           </td>
           <td>
     <div class="select-course">
-      <select style="width: 300px;">
+      <select style="width: 300px;" id="course">
+        <option value="">　</option>
         <option value="01">保険金額固定コース（月払）</option>
         <option value="02">保険金額固定コース（年払）</option>
+        <option value="03">保険料定額コース（月払）</option>
+        <option value="04">保険料定額コース（年払）</option>
       </select>
-     <select style="width: 300px;">
-       <option value="05">死亡保険金50万円</option>
-       <option value="06">死亡保険金100万円</option>
-       <option value="07">死亡保険金200万円</option>
-       <option value="08">死亡保険金300万円</option>
+     <select style="width: 300px;" id="amount-premium">
+       <option value="">　</option>       
       </select>
     </div>
           </td>
@@ -232,8 +232,7 @@
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/slick.js"></script>
 
-<script src="js/calculate_age.js"></script>
-<script src="js/premium.js"></script>
+<script src="js/select.js"></script>
   
 </body>
 </html>
