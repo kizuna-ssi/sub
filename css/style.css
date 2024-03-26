@@ -1580,6 +1580,31 @@ opacity: 1;
 	padding: 25px;
 }
 
+.application .ta4 {
+	border-top: 1px solid #ccc;
+	width: 100%;
+	max-width: 800px;
+	margin: auto; 
+}
+
+
+.application .ta4 tr{
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.application .ta4 th{
+	text-align: center;
+	font-size: 0.8em;
+	background-color: #eeeeee;
+}
+
+.application .ta4 td{
+	text-align: center;
+	font-size: 0.8em;
+}
+
 
 .application p {
 	font-size: 0.8em;
