@@ -1,4 +1,4 @@
-function() {
+function course() {
 var array = new Array();
 array[''] = new Array({cd:"0", label:"選択してください"});
 array["01"] = new Array(
