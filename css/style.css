@@ -1538,7 +1538,7 @@ opacity: 1;
 	border: 1px solid #fff;
 	width: 100%;
 	max-width: 800px;
-	margin: 0px 35px 20px 35px; 
+	margin: auto; 
 }
 
 .application .ta2 tr{
@@ -1552,7 +1552,7 @@ opacity: 1;
 }
 
 .application .ta2 td{
-	padding: 35px;
+	padding: 0px 35px 20px 35px;
 	text-align: left;
 }
 
