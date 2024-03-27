@@ -296,7 +296,9 @@
                 </tr>
               <tr>
                 <th style="border-left: 1px solid #ccc;">住所</th>
-                <td><input type="text" name="住所" size="30" class="ws" autocomplete="off"></td>
+                <td>
+                  <input type="text" id="address" name="address" size="30" class="ws" autocomplete="off" style="width:130px;">
+                  <button type="submit">送信</button></td>
               </tr>
             </table>
 
@@ -337,6 +339,18 @@
 
 <!--jQueryの読み込み-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  $(function(){
+    $('#zipcode').on('change', function(){
+      const zipcode = $(this).val();
+      $.getJSON('https://api.example.com/zipcode_search?zipcode=' + zipcode, function(data){
+        if(data && data.address){
+          $('#address').val(data.address);
+        }
+      });
+    });
+  });
+</script>
 
 <!--このテンプレート専用のスクリプト-->
 <script src="js/main.js"></script>
