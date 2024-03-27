@@ -1657,29 +1657,11 @@ opacity: 1;
 	border-right: 1px solid #ccc;
 }
 
-.application .ta7 {
-	border-top: 1px solid #ccc;
-	width: 80%;
-	table-layout: fixed;
-	margin: 10px; 
-}
-
-.application .ta7 tr{
-	border-bottom: 1px solid #ccc;
-}
-
-.application .ta7 th{
-	text-align: center;
-	font-size: 0.8em;
-	background-color: #eeeeee;
-}
-
-.application .ta7 td{
-	text-align: center;
-	font-size: 0.8em;
-	padding: 5px;
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
+.application .ta6 ol{
+        font-size: 0.8em;
+        margin: 0;
+        padding: 0px 0px 0px 15px;
+        text-align: left;
 }
 
 .application p {
