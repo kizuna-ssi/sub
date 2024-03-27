@@ -1,10 +1,16 @@
+@media screen {
+  .no-screen {
+    display: none !important;
+  }
+}
+
 @media print{
  *{
      -webkit-print-color-adjust: exact;
  }
 	
   .no-print{
-    display: none;
+    display: none !important;
   }
 
 main{
