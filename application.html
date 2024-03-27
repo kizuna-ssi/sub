@@ -45,7 +45,8 @@
       <h2>定期保険（定期保険普通保険約款）<br>保険申込書 兼 意向確認書</h2>
     </div>
     
-  <form class="form">
+  <form class="form h-adr">
+    <span class="p-country-name" style="display:none;">Japan</span>
   　<div class="no-screen">    
     <table class="ta2">
       <tbody>
@@ -291,13 +292,13 @@
                 <th rowspan="2">現住所</th>
                 <th style="border-left: 1px solid #ccc;">郵便番号</th>
                 <td>
-                  <input type="text" id="zipcode" name="zipcode" pattern="\d{3}-\d{4}" size="30" class="ws" autocomplete="off" style="width:130px;">
+                  <input type="text" class="p-postal-code ws" size="8" maxlength="8">
                 </td>
                 </tr>
               <tr>
                 <th style="border-left: 1px solid #ccc;">住所</th>
                 <td>
-                  <input type="text" id="address" name="address" size="30" class="ws" autocomplete="off">
+                  <input type="text" class="p-region p-locality p-street-address p-extended-address ws" />
               </tr>
             </table>
 
