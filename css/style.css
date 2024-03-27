@@ -1688,3 +1688,12 @@ opacity: 1;
         color: #555;
         text-align: center;
 }
+
+.application .ws {
+	width: 95%;
+	display: block;
+	background-color:#fff;
+	border: none;
+	height:20px;
+	padding:5px;
+}
