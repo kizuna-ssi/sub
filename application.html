@@ -292,7 +292,6 @@
                 <th style="border-left: 1px solid #ccc;">郵便番号</th>
                 <td>
                   <input type="text" id="zipcode" name="zipcode" pattern="\d{3}-\d{4}" size="30" class="ws" autocomplete="off" style="width:130px;">
-                  <button type="submit">住所変換</button></td>
                 </td>
                 </tr>
               <tr>
@@ -339,18 +338,7 @@
 
 <!--jQueryの読み込み-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
-  $(function(){
-    $('#zipcode').on('change', function(){
-      const zipcode = $(this).val();
-      $.getJSON('https://api.example.com/zipcode_search?zipcode=' + zipcode, function(data){
-        if(data && data.address){
-          $('#address').val(data.address);
-        }
-      });
-    });
-  });
-</script>
+
 
 <!--このテンプレート専用のスクリプト-->
 <script src="js/main.js"></script>
