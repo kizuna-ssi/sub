@@ -1538,7 +1538,7 @@ opacity: 1;
 	border: 1px solid #fff;
 	width: 100%;
 	max-width: 800px;
-	margin: 35px auto;; 
+	margin: 0px auto 35px auto; 
 }
 
 .application .ta2 tr{
