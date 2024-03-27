@@ -1674,8 +1674,6 @@ opacity: 1;
 }
 
 .application .select-course {
-	display: flex;
-	width: 300px;
 	align-items: center;
 }
 
