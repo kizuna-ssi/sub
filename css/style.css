@@ -1675,7 +1675,7 @@ opacity: 1;
 
 .application .select-course {
 	display: flex;
-	max-width: 300px;
+	width: 300px;
 	align-items: center;
 }
 
