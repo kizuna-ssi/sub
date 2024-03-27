@@ -1633,7 +1633,7 @@ opacity: 1;
 }
 
 .application .ta6 {
-	border-top: 1px solid #fff;
+	border-top: 1px solid #ccc;
 	width: 100%;
 	min-width: 500px;
 	table-layout: fixed;
@@ -1642,21 +1642,21 @@ opacity: 1;
 
 
 .application .ta6 tr{
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid #ccc;
 }
 
 .application .ta6 th{
 	text-align: center;
 	font-size: 0.8em;
-	background-color: #eeeeee;
+	background-color: #ccc;
 }
 
 .application .ta6 td{
 	text-align: center;
 	font-size: 0.8em;
 	padding: 5px;
-	border-left: 1px solid #fff;
-	border-right: 1px solid #fff;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
 }
 
 .application p {
@@ -1718,7 +1718,7 @@ opacity: 1;
 	width: 95%;
 	display: block;
 	background-color:#fff;
-	border: 1px solid #ccc;
+	border: none;
 	height:30px;
 	padding:5px;
 }
