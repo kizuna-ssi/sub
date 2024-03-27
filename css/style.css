@@ -1749,3 +1749,7 @@ opacity: 1;
         color: #555;
         text-align: center;
 }
+
+.application .float{
+      float: left;
+    }
