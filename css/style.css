@@ -1717,8 +1717,8 @@ opacity: 1;
 .application .ws {
 	width: 95%;
 	display: block;
-	background-color:#ccc;
-	border: none;
+	background-color:#fff;
+	border: 1px solid #ccc;
 	height:30px;
 	padding:5px;
 }
