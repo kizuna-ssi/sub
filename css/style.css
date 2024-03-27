@@ -1657,6 +1657,31 @@ opacity: 1;
 	border-right: 1px solid #ccc;
 }
 
+.application .ta7 {
+	border-top: 1px solid #ccc;
+	width: 80%;
+	table-layout: fixed;
+	margin: 20px 0px 0px 0px; 
+}
+
+.application .ta7 tr{
+	border-bottom: 1px solid #ccc;
+}
+
+.application .ta7 th{
+	text-align: center;
+	font-size: 0.8em;
+	background-color: #eeeeee;
+}
+
+.application .ta7 td{
+	text-align: center;
+	font-size: 0.8em;
+	padding: 5px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
 .application p {
 	font-size: 0.8em;
 	padding: 1px 1px 1px 1px;
