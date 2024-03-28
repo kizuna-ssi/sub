@@ -1762,9 +1762,9 @@ opacity: 1;
     }
 
 .quotation .ta2 {
+	table-layout: fixed;
 	border: 1px solid #ccc;
 	width: 100%;
-	max-width: 600px;
 	margin: 0px auto 35px auto; 
 }
 
@@ -1776,7 +1776,7 @@ opacity: 1;
 
 .quotation .ta2 th{
 	background-color: #eeeeee;
-	font-weight:nomal;
+	font-weight:normal;
 }
 
 .quotation .ta2 td{
@@ -1796,22 +1796,5 @@ opacity: 1;
     display: block;
     width: 100%;
     position: relative;
-  }
-.quotation .ta2 td:first-child:before {
-    content: "見出し:before";
-    background: #e9727e;
-    box-sizing: border-box;
-    color: #fff;
-    font-weight: bold;
-    height: 40px;
-    padding: 10px;
-    position: absolute;
-    top: -41px;
-    left: -0.2%;
-    display: block;
-    width: 100.5%;
-  }
-.quotation .ta2 tr {
-    margin-bottom: 40px;
   }
 }
