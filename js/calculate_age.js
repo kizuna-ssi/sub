@@ -28,10 +28,10 @@ function calculateAge() {
     targetDate = new Date(today.getFullYear() + (today.getMonth() === 11 ? 1 : 0), (today.getMonth() + 2) % 12, 1);
   }
 
-  age = targetDate.getFullYear() - birthDate.getFullYear();
+  let age = targetDate.getFullYear() - birthDate.getFullYear();
   const monthDiff = targetDate.getMonth() - birthDate.getMonth();
 
-  if (monthDiff < 0 || (monthDiff === 0 && targetDate.getDate() <= birthDate.getDate())) {
+  if (monthDiff < 0 || (monthDiff === 0 && targetDate.getDate() < birthDate.getDate())) {
     age--;
   }
 
@@ -45,6 +45,7 @@ function calculateAge() {
   return age;
 
 }
+
 
 
 userBirthdayYear.innerHTML = '<option value="-">-</option>';
