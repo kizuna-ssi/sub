@@ -1760,3 +1760,25 @@ opacity: 1;
 .application .float{
       float: left;
     }
+
+.quotation .ta2 {
+	border: 1px solid #fff;
+	width: 100%;
+	max-width: 800px;
+	margin: 0px auto 35px auto; 
+}
+
+.quotation .ta2 tr{
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.quotation .ta2 th{
+	background-color: #eeeeee;
+}
+
+.quotation .ta2 td{
+	padding: 0px 35px 0px 35px;
+	text-align: left;
+}
