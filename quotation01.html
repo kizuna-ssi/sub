@@ -162,7 +162,7 @@
 
 </section>
 
-<div id="test1" class="test"></div>
+<div id="datedisplay"></div>
   
 </main>
     
@@ -175,21 +175,35 @@
 
 <!--jQueryの読み込み-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+<script>
+  setInterval(function(){
+    var y = new Date().getFullYear();
+    var m = new Date().getMonth() + 1;
+    var d = new Date().getDate();
+    var w = new Date().getDay();
+    var wd = ["日","月","火","水","木","金","土"];
+    var youbi = wd[w];
+    var h = new Date().getHours();
+    var min = new Date().getMinutes();
+    var s = new Date().getSeconds();
+    $("#datedisplay").html(y + "年" + m + "月" + d + "日" + "（" + youbi + "）" + h + ":" + min + ":" + s);
+},1000);
+</script>
+  
 <!--このテンプレート専用のスクリプト-->
 <script src="js/main.js"></script>
 
 <!--開閉ボタン（ハンバーガーアイコン）-->
-  <div class="no-print">   
+<div class="no-print">   
 <div id="menubar_hdr">
 <span></span><span></span><span></span>
 </div>
-  </div>
+</div>
 
 <!--ページの上部へ戻るボタン-->
-  <div class="no-print">   
+<div class="no-print">   
 <div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
-  </div>
+</div>
 
 <!--パララックス（inview）-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
