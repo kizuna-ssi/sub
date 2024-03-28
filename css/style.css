@@ -1776,6 +1776,7 @@ opacity: 1;
 }
 
 .quotation .ta2 th{
+	width: 100px;
 	font-weight: bold;
 	text-align: left;
 }
@@ -1787,3 +1788,8 @@ opacity: 1;
 	color: #e58882;
 }
 
+@media screen and (max-width:899px) {
+.quotation .ta2 th{
+	width: 50px;
+}
+}
