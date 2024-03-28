@@ -48,3 +48,8 @@ $('.blur').on('inview', function() {
 $('.cracker').on('inview', function() {
 	$('.cracker').append('<span class="crackerstyle"><img src="images/cracker.gif" alt=""><img src="images/cracker.gif" alt=""></span>');
 });
+
+$(function(){
+    var datetime = new Date();//取得
+    $("#datedisplay").html(datetime);//表示
+});
