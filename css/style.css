@@ -1763,10 +1763,10 @@ opacity: 1;
 
 .quotation .ta2 {
 	table-layout: fixed;
-	border: 1px solid #ccc;
+	border: 1px solid #fff;
 	width: 90%;
 	margin: 0px auto 35px auto;
-	font-size: 0.9em;
+	font-size: 0.95em;
 }
 
 .quotation .ta2 tr{
@@ -1776,8 +1776,7 @@ opacity: 1;
 }
 
 .quotation .ta2 th{
-	background-color: #eeeeee;
-	font-weight:normal;
+	font-weight: bold;
 }
 
 .quotation .ta2 td{
