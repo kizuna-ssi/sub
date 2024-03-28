@@ -48,8 +48,8 @@ function calculateAge() {
 
 
 userBirthdayYear.innerHTML = '<option value="-">-</option>';
-userBirthdayMonth.innerHTML = '<option value="-">-</option>';
-userBirthdayDay.innerHTML = '<option value="-">-</option>';
+userBirthdayMonth.innerHTML = '<option value="1">1</option>';
+userBirthdayDay.innerHTML = '<option value="1">1</option>';
 
 
 for(let i = 1924; i <= 1980; i++) {
