@@ -1,4 +1,40 @@
- function calculate() {
+function calculate() {
+    var premium = calculatePremium();
+ 
+    // 生年月日の取得
+    var year = document.querySelector('.birthday-year').value;
+    var month = document.querySelector('.birthday-month').value;
+    var day = document.querySelector('.birthday-day').value;
+
+    // 性別の取得
+    var gender;
+    if (document.getElementById('male').checked) {
+        gender = '男性';
+    } else if (document.getElementById('female').checked) {
+        gender = '女性';
+    }
+
+    // 保険金額の取得
+    var amount;
+    if (document.getElementById('50').checked) {
+        amount = '50万円';
+    } else if (document.getElementById('100').checked) {
+        amount = '100万円';
+    } else if (document.getElementById('200').checked) {
+        amount = '200万円';
+    } else if (document.getElementById('300').checked) {
+        amount = '300万円';
+    }
+
+    // 生年月日、性別、保険金額を表示
+    document.getElementById('birthdayLabel').innerText = '生年月日: ' + year + '年' + month + '月' + day + '日';
+    document.getElementById('genderLabel').innerText = '性別: ' + gender;
+    document.getElementById('amountLabel').innerText = '保険金額: ' + amount;
+    document.getElementById('premiumLabel').innerText = '保険料: ' + premium + '円'; // 保険料を表示
+}
+
+
+function calculatePremium() {
     var a, b, c, d;
     a = calculateAge(); 
     b = document.querySelector('input[name="gender"]:checked').value;
@@ -2412,34 +2448,4 @@
     }
   }
 
-function calculate() {
-    // 生年月日の取得
-    var year = document.querySelector('.birthday-year').value;
-    var month = document.querySelector('.birthday-month').value;
-    var day = document.querySelector('.birthday-day').value;
 
-    // 性別の取得
-    var gender;
-    if (document.getElementById('male').checked) {
-        gender = '男性';
-    } else if (document.getElementById('female').checked) {
-        gender = '女性';
-    }
-
-    // 保険金額の取得
-    var amount;
-    if (document.getElementById('50').checked) {
-        amount = '50万円';
-    } else if (document.getElementById('100').checked) {
-        amount = '100万円';
-    } else if (document.getElementById('200').checked) {
-        amount = '200万円';
-    } else if (document.getElementById('300').checked) {
-        amount = '300万円';
-    }
-
-    // 生年月日、性別、保険金額を表示
-    document.getElementById('birthdayLabel').innerText = '生年月日: ' + year + '年' + month + '月' + day + '日';
-    document.getElementById('genderLabel').innerText = '性別: ' + gender;
-    document.getElementById('amountLabel').innerText = '保険金額: ' + amount;
-}
