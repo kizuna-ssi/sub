@@ -154,7 +154,7 @@
                 <th>性別</th>
                 <td style="width:150px;">
                   <div class="select-gender">
-                    <select style="width: 120px;">
+                    <select id="contractor_gender" style="width: 120px;">
                      <option value="">　</option>
                      <option value="">女性</option>
                      <option value="">男性</option>
@@ -468,6 +468,7 @@
     var contractorAddress = document.getElementById("contractor_address").value;
     var contractorTel = document.getElementById("contractor_tel").value;
     var contractorEmail = document.getElementById("contractor_email").value;
+    var contractorGender = document.getElementById("contractor_gender").value;
 
     document.getElementById("insured_name").value = contractorName;
     document.getElementById("insured_furigana").value = contractorFurigana;
@@ -475,6 +476,7 @@
     document.getElementById("insured_address").value = contractorAddress;
     document.getElementById("insured_tel").value = contractorTel;
     document.getElementById("insured_email").value = contractorEmail;
+    document.getElementById("insured_gender").value = contractorGender;
   }
 </script>
   
