@@ -1780,21 +1780,7 @@ opacity: 1;
 }
 
 .quotation .ta2 td{
-	padding: 0px 35px 0px 35px;
+	padding: auto;
 	text-align: center;
 }
 
-@media screen and (max-width: 899px) {
- .quotation .ta2 {
-    width: 80%;
-  } 
- .quotation .ta2 .thead {
-    display: none;
-  }
-.quotation .ta2 tr,
-.quotation .ta2 td{
-    display: block;
-    width: 100%;
-    position: relative;
-  }
-}
