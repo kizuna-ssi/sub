@@ -1,4 +1,5 @@
 function calculate() {
+    // 保険料の計算
     var premium = calculatePremium();
  
     // 生年月日の取得
@@ -26,11 +27,19 @@ function calculate() {
         amount = '300万円';
     }
 
+    // 払込回数の取得
+    var times;
+    if (document.getElementById('month').checked) {
+        times = '月払';
+    } else if (document.getElementById('year').checked) {
+        times = '年払';
+    }
+
     // 生年月日、性別、保険金額を表示
     document.getElementById('birthdayLabel').innerText = '生年月日: ' + year + '年' + month + '月' + day + '日';
     document.getElementById('genderLabel').innerText = '性別: ' + gender;
     document.getElementById('amountLabel').innerText = '保険金額: ' + amount;
-    document.getElementById('premiumLabel').innerText = '保険料: ' + premium + '円'; // 保険料を表示
+    document.getElementById('timesLabel').innerText = '払込回数: ' + times;
 }
 
 
