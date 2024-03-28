@@ -1777,11 +1777,13 @@ opacity: 1;
 
 .quotation .ta2 th{
 	font-weight: bold;
+	text-align: left;
 }
 
 .quotation .ta2 td{
 	padding: auto;
-	text-align: center;
+	font-weight: bold;
+	text-align: left;
 	color: #e58882;
 }
 
