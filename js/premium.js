@@ -36,10 +36,10 @@ function calculate() {
     }
 
     // 生年月日、性別、保険金額を表示
-    document.getElementById('birthdayLabel').innerText = '生年月日: ' + year + '年' + month + '月' + day + '日';
-    document.getElementById('genderLabel').innerText = '性別: ' + gender;
-    document.getElementById('amountLabel').innerText = '保険金額: ' + amount;
-    document.getElementById('timesLabel').innerText = '払込回数: ' + times;
+    document.getElementById('birthdayLabel').innerText =  year + '年' + month + '月' + day + '日';
+    document.getElementById('genderLabel').innerText =  gender;
+    document.getElementById('amountLabel').innerText =  amount;
+    document.getElementById('timesLabel').innerText =  times;
 }
 
 
