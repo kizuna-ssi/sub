@@ -1783,3 +1783,35 @@ opacity: 1;
 	padding: 0px 35px 0px 35px;
 	text-align: center;
 }
+
+@media screen and (max-width: 899px) {
+ .quotation .ta2 {
+    width: 80%;
+  } 
+ .quotation .ta2 .thead {
+    display: none;
+  }
+.quotation .ta2 tr,
+.quotation .ta2 td{
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+.quotation .ta2 td:first-child:before {
+    content: "見出し:before";
+    background: #e9727e;
+    box-sizing: border-box;
+    color: #fff;
+    font-weight: bold;
+    height: 40px;
+    padding: 10px;
+    position: absolute;
+    top: -41px;
+    left: -0.2%;
+    display: block;
+    width: 100.5%;
+  }
+.quotation .ta2 tr {
+    margin-bottom: 40px;
+  }
+}
