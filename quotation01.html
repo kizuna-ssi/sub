@@ -84,6 +84,22 @@
       <label for="ac-1"> 見積結果 </label>
       <div class="open">
 
+        <table class="ta1">
+          <caption>選択内容</caption>
+          <tr>
+            <th>生年月日</th>
+            <th>性別</th>
+            <th>保険金額</th>
+            <th>払込回数</th>
+          </tr>
+          <tr>
+            <td><div id="birthdayLabel"></div></td>
+            <td><div id="genderLabel"></div></td>
+            <td><div id="amountLabel"></div></td>
+            <td><div id="timesLabel"></div></td>
+          </tr>
+        </table>
+
          <div class="c3" style="justify-content: center;">
            <span style="font-weight: bold; margin: auto 1px auto 1px;">保険料 ：　</span>
          <div style="display:none"><input id="premium" type="text" readonly=""></div>
@@ -96,11 +112,6 @@
            責任開始日時点の年齢（契約年齢）は<br class="br-sp">「
            <span id="ageDisplay1" type="text" readonly="" style="font-weight: bold; color: #e58882;"></span> 歳」です。
          </p>
-
-        <p id="birthdayLabel"></p>
-        <p id="genderLabel"></p>
-        <p id="amountLabel"></p>
-        <p id="timesLabel"></p>
         
         <hr>
         <p style="font-size: 0.8rem; text-indent: -2em; padding-left: 2em; margin: auto;">
