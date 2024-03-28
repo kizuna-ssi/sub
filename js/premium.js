@@ -2412,7 +2412,7 @@
     }
   }
 
-function display() {
+function calculate() {
     // 生年月日の取得
     var year = document.querySelector('.birthday-year').value;
     var month = document.querySelector('.birthday-month').value;
