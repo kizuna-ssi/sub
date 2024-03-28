@@ -35,11 +35,26 @@ function calculate() {
         premium = '50,000円';
     }
 
+   // 払込回数の取得
+
+    var times;
+    if (document.getElementById('1000').checked || 
+        document.getElementById('2000').checked || 
+        document.getElementById('3000').checked || 
+        document.getElementById('5000').checked) {
+    times = '月払';
+    } else if (document.getElementById('10000').checked || 
+               document.getElementById('20000').checked || 
+               document.getElementById('30000').checked || 
+               document.getElementById('50000').checked) {
+    times = '年払';
+    }
 
     // 生年月日、性別、保険料を表示
     document.getElementById('birthdayLabel').innerText =  year + '年' + month + '月' + day + '日';
     document.getElementById('genderLabel').innerText =  gender;
     document.getElementById('premiumLabel').innerText =  premium;
+    document.getElementById('timesLabel').innerText =  times;
 }
 
 function calculateAmount() {
