@@ -1,4 +1,56 @@
-  function calculate() {
+function calculate() {
+    // 保険金額の計算
+    var amount = calculateAmount();
+ 
+    // 生年月日の取得
+    var year = document.querySelector('.birthday-year').value;
+    var month = document.querySelector('.birthday-month').value;
+    var day = document.querySelector('.birthday-day').value;
+
+    // 性別の取得
+    var gender;
+    if (document.getElementById('male').checked) {
+        gender = '男性';
+    } else if (document.getElementById('female').checked) {
+        gender = '女性';
+    }
+
+    // 保険料の取得
+    var premium;
+    if (document.getElementById('1000').checked) {
+        premium = '1,000円';
+    } else if (document.getElementById('2000').checked) {
+        premium = '2,000円';
+    } else if (document.getElementById('3000').checked) {
+        premium = '3,000円';
+    } else if (document.getElementById('5000').checked) {
+        premium = '5,000円';
+    } else if (document.getElementById('10000').checked) {
+        premium = '10,000円';
+    } else if (document.getElementById('20000').checked) {
+        premium = '20,000円';
+    } else if (document.getElementById('30000').checked) {
+        premium = '30,000円';
+    } else if (document.getElementById('50000').checked) {
+        premium = '50,000円';
+    }
+
+    // 払込回数の取得
+    var times;
+    if (document.getElementById('month').checked) {
+        times = '月払';
+    } else if (document.getElementById('year').checked) {
+        times = '年払';
+    }
+
+    // 生年月日、性別、保険金額を表示
+    document.getElementById('birthdayLabel').innerText =  year + '年' + month + '月' + day + '日';
+    document.getElementById('genderLabel').innerText =  gender;
+    document.getElementById('premiumLabel').innerText =  premium;
+    document.getElementById('timesLabel').innerText =  times;
+}
+
+function calculateAmount() {
     var a, b, c;
     a = calculateAge(); 
     b = document.querySelector('input[name="gender"]:checked').value;
