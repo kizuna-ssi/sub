@@ -32,11 +32,7 @@
    
     <div class="no-print">
       <table class="ta1">
-        <tr>        
-          <td colspan="2" style="padding-left: 7%;">
-          生年月日、性別、保険金額、払込回数を選択し、見積結果をクリックしてください。
-          </td>
-        </tr>
+        <caption>生年月日、性別、保険金額、払込回数を選択し、見積結果をクリックしてください。</caption>
     <tr>
       <th>生年<br class="br-sp">月日</th>
        <td>
@@ -85,8 +81,37 @@
       <div class="open">
         <div class="quotation">
 
+
+
+         <div class="c3" style="justify-content: center;">
+           <span style="font-weight: bold; margin: auto 1px auto 1px;">保険料 ：　</span>
+         <div style="display:none"><input id="premium" type="text" readonly=""></div>
+         <div id="product" type="text" readonly="" style="font-size: 180%; color: #e58882; font-weight: bold;"></div>
+         </div>
+        
+         <p style="font-size: 0.8rem; text-align:center;">
+           本日お申込みされた場合の責任開始日は<br class="br-sp">「
+           <span id="ageDisplay2" type="text" readonly="" style="font-weight: bold; color: #e58882;"></span> 」です。<br>
+           責任開始日時点の年齢（契約年齢）は<br class="br-sp">「
+           <span id="ageDisplay1" type="text" readonly="" style="font-weight: bold; color: #e58882;"></span> 歳」です。
+         </p>
+
         <table class="ta2">
-          <caption>選択内容</caption>
+          <tr>
+            <th>生年月日</th>
+            <th>性別</th>
+            <th>保険金額</th>
+            <th>払込回数</th>
+          </tr>
+          <tr>
+            <td><div id="birthdayLabel"></div></td>
+            <td><div id="genderLabel"></div></td>
+            <td><div id="amountLabel"></div></td>
+            <td><div id="timesLabel"></div></td>
+          </tr>
+        </table>
+                 
+          <table class="ta2">
           <tr>
             <th>生年月日</th>
             <th>性別</th>
@@ -101,19 +126,7 @@
           </tr>
         </table>
 
-         <div class="c3" style="justify-content: center;">
-           <span style="font-weight: bold; margin: auto 1px auto 1px;">保険料 ：　</span>
-         <div style="display:none"><input id="premium" type="text" readonly=""></div>
-         <div id="product" type="text" readonly="" style="font-size: 180%; color: #e58882; font-weight: bold;"></div>
-         </div>
-        
-         <p style="font-size: 0.8rem; text-align:center;">
-           本日お申込みされた場合の責任開始日は<br class="br-sp">「
-           <span id="ageDisplay2" type="text" readonly="" style="font-weight: bold; color: #e58882;"></span> 」です。<br>
-           責任開始日時点の年齢（契約年齢）は<br class="br-sp">「
-           <span id="ageDisplay1" type="text" readonly="" style="font-weight: bold; color: #e58882;"></span> 歳」です。
-         </p>
-        
+          
         <hr>
         <p style="font-size: 0.8rem; text-indent: -2em; padding-left: 2em; margin: auto;">
           ※1 責任開始日は、申込受付完了が月初～15日の場合は<span style="font-weight: bold; color: #e58882;">翌月の1日</span>、
