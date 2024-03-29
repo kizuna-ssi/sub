@@ -33,15 +33,22 @@ document.addEventListener('DOMContentLoaded', function() {
         return result;
     }
 
-    // HTMLにデータを表示する関数
-    function displayData(data) {
-        var container = document.getElementById('dataContainer');
+    // 2列目と4列目のデータをセレクトボックスに表示する関数
+    function populateSelectBoxes(data) {
+        var selectBox2 = document.getElementById('selectBox2');
+        var selectBox4 = document.getElementById('selectBox4');
+
         data.forEach(function(row) {
-            var html = '<div>2列目のデータ: ' + row[1] + ', 4列目のデータ: ' + row[3] + '</div>';
-            container.innerHTML += html;
+            var option2 = document.createElement('option');
+            option2.text = row[1]; // 2列目のデータをセレクトボックスのオプションに追加
+            selectBox2.appendChild(option2);
+
+            var option4 = document.createElement('option');
+            option4.text = row[3]; // 4列目のデータをセレクトボックスのオプションに追加
+            selectBox4.appendChild(option4);
         });
     }
 
-    // CSVファイルを読み込んでデータを表示する
-    loadCSV(displayData);
+    // CSVファイルを読み込んでセレクトボックスを生成する
+    loadCSV(populateSelectBoxes);
 });
