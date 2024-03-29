@@ -1787,6 +1787,7 @@ opacity: 1;
 	font-weight: bold;
 	text-align: left;
 	color: #e58882;
+	min-height: 49.3px;
 }
 
 @media screen and (max-width:899px) {
