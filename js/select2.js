@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var csvFilePath = 'data.csv'; // CSVファイルのパス
+    var csvFilePath = 'csv/data.csv'; // CSVファイルのパス
 
     // CSVファイルを読み込む関数
     function loadCSV(callback) {
