@@ -12,11 +12,16 @@
   .no-print{
     display: none !important;
   }
+	
+.hide-on-screen {
+　　display:block;
+}
 
 main{
     padding-top: 0px;
   }
-
+	
+	
 }
 
 @page {
