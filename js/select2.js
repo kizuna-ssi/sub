@@ -18,35 +18,46 @@ document.addEventListener('DOMContentLoaded', function() {
         xhr.send();
     }
 
-    // CSVファイルのデータをパースして配列に変換する関数
+    // CSVファイルのデータをパースして指定の列を取得する関数
     function parseCSV(csvData) {
         var lines = csvData.split('\n');
         var result = [];
         lines.forEach(function(line) {
             var values = line.split(',');
+            // ダブルクォーテーションがあれば削除して追加
+            values = values.map(function(value) {
+                return value.replace(/^"|"$/g, '');
+            });
             result.push(values);
         });
         return result;
     }
 
-    // テキストボックスの値に基づいてCSVデータを検索し、該当の行の2列目と4列目のデータを表示する関数
-    function searchCSV() {
-        var inputValue = document.getElementById('inputValue').value;
-        var resultContainer = document.getElementById('resultContainer');
-        resultContainer.innerHTML = ''; // 表示をクリア
+    // 2列目と4列目のデータをセレクトボックスに表示する関数（重複行を非表示にする）
+    function populateSelectBoxes(data) {
+        var selectBox2 = document.getElementById('selectBox2');
+        var selectBox4 = document.getElementById('selectBox4');
+        var seen = {}; // 重複チェック用のオブジェクト
 
         data.forEach(function(row) {
-            if (row[0] === inputValue) {
-                var html = '<div>2列目のデータ: ' + row[1] + ', 4列目のデータ: ' + row[3] + '</div>';
-                resultContainer.innerHTML += html;
+            // 重複がない場合のみ追加
+            if (!seen[row[1]]) {
+                var option2 = document.createElement('option');
+                option2.text = row[1]; // 2列目のデータをセレクトボックスのオプションに追加
+                selectBox2.appendChild(option2);
+                seen[row[1]] = true;
+            }
+
+            // 重複がない場合のみ追加
+            if (!seen[row[3]]) {
+                var option4 = document.createElement('option');
+                option4.text = row[3]; // 4列目のデータをセレクトボックスのオプションに追加
+                selectBox4.appendChild(option4);
+                seen[row[3]] = true;
             }
         });
     }
 
-    // CSVファイルを読み込んでデータを取得し、テキストボックスのイベントリスナーを設定する
-    loadCSV(function(csvData) {
-        window.data = parseCSV(csvData); // グローバル変数としてデータを保持
-        var inputTextbox = document.getElementById('inputValue');
-        inputTextbox.addEventListener('input', searchCSV);
-    });
+    // CSVファイルを読み込んでセレクトボックスを生成する
+    loadCSV(populateSelectBoxes);
 });
