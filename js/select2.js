@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function populateSelectBox(data) {
         data.forEach(function(row) {
             var option = document.createElement('option');
-            option.text = row[3]; // CSVファイルの4列目のデータをセレクトボックスのオプションに追加
+            option.text = row[1]; // CSVファイルの2列目のデータをセレクトボックスのオプションに追加
             selectBox.appendChild(option);
         });
     }
