@@ -151,3 +151,16 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
 
+    // 選択された大分類と小分類を表示する関数
+    function displaySelectedCategories() {
+      const selectedCategory = document.getElementById('category-select-1').value;
+      const selectedSubCategory = document.getElementById('sub-category-select-1').value;
+      
+      // 表示する要素に選択された大分類と小分類を書き込む
+      document.getElementById('selected-categories').innerText = `選択された大分類: ${selectedCategory}, 選択された小分類: ${selectedSubCategory}`;
+    }
+
+    // 大分類が選択されたら関数を呼び出す
+    document.getElementById('category-select-1').addEventListener('input', displaySelectedCategories);
+    // 小分類が選択されたら関数を呼び出す
+    document.getElementById('sub-category-select-1').addEventListener('input', displaySelectedCategories);
