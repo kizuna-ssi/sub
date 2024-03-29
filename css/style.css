@@ -1793,52 +1793,52 @@ opacity: 1;
 }
 
 .application .ac-box{
-width: auto;
-margin: 30px auto 30px;
+        width: auto;
+        margin: 30px auto 30px;
 }
 
 .application .ac-box label{
-max-width: 800px;
-font-size: 16px;
-font-weight: bold;
-text-align: center;
-background: #e58882;
-line-height: 50px;
-position: relative;
-display: block;
-height: 50px;
-border-radius: 30px;
-cursor: pointer;
-color: #fff;
-transition: all 0.5s;
+        max-width: 800px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        background: #e58882;
+        line-height: 50px;
+        position: relative;
+        display: block;
+        height: 50px;
+        border-radius: 30px;
+        cursor: pointer;
+        color: #fff;
+        transition: all 0.5s;
 }
 
 .application .ac-box label:hover{
-background: #e58882;
--webkit-transition: all .3s;
-transition: all .3s;
+        background: #e58882;
+        -webkit-transition: all .3s;
+        transition: all .3s;
 }
 
 .application .ac-box input{
-display: none;
+        display: none;
 }
 
 .application .ac-box .open{
-height: 0px;
-padding: 0px;
-overflow: hidden;
-opacity: 0;
-transition: 0.5s;
+        height: 0px;
+        padding: 0px;
+        overflow: hidden;
+        opacity: 0;
+        transition: 0.5s;
 }
 
 .application .ac-box input:checked ~ .open{
-height: auto;
-width: 100%;
-max-width: 800px;
-margin: auto;
-padding: 4%;
-background: #ffff;
-opacity: 1;
+	height: auto;
+	width: 100%;
+	max-width: 800px;
+	margin: auto;
+	padding: 4%;
+	background: #ffff;
+	opacity: 1;
 }
 
 
