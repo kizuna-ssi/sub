@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var csvFilePath = 'csv/data.csv'; // CSVファイルのパス
+    var csvFilePath = 'data.csv'; // CSVファイルのパス
 
     // CSVファイルを読み込む関数
     function loadCSV(callback) {
@@ -33,19 +33,28 @@ document.addEventListener('DOMContentLoaded', function() {
         return result;
     }
 
-    // 2列目と4列目のデータをセレクトボックスに表示する関数
+    // 2列目と4列目のデータをセレクトボックスに表示する関数（重複行を非表示にする）
     function populateSelectBoxes(data) {
         var selectBox2 = document.getElementById('selectBox2');
         var selectBox4 = document.getElementById('selectBox4');
+        var seen = {}; // 重複チェック用のオブジェクト
 
         data.forEach(function(row) {
-            var option2 = document.createElement('option');
-            option2.text = row[1]; // 2列目のデータをセレクトボックスのオプションに追加
-            selectBox2.appendChild(option2);
+            // 重複がない場合のみ追加
+            if (!seen[row[1]]) {
+                var option2 = document.createElement('option');
+                option2.text = row[1]; // 2列目のデータをセレクトボックスのオプションに追加
+                selectBox2.appendChild(option2);
+                seen[row[1]] = true;
+            }
 
-            var option4 = document.createElement('option');
-            option4.text = row[3]; // 4列目のデータをセレクトボックスのオプションに追加
-            selectBox4.appendChild(option4);
+            // 重複がない場合のみ追加
+            if (!seen[row[3]]) {
+                var option4 = document.createElement('option');
+                option4.text = row[3]; // 4列目のデータをセレクトボックスのオプションに追加
+                selectBox4.appendChild(option4);
+                seen[row[3]] = true;
+            }
         });
     }
 
