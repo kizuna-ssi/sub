@@ -165,14 +165,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // 小分類が選択されたら関数を呼び出す
     document.getElementById('sub-category-select-1').addEventListener('input', displaySelectedCategories);
 
-  // フォーム内の入力を取得して表示する関数
-  function displayUserData() {
-    // 保険契約者の氏名を取得
-    var contractorName = document.getElementById("contractor_name").value;
-    // 保険契約者のフリガナを取得
-    var contractorFurigana = document.getElementById("contractor_furigana").value;
 
-    // 表示用の要素に取得したデータを表示
-    document.getElementById('contractorNameLabel').innerText =  contractorName;
-    document.getElementById('contractorFuriganaLabel').innerText =  contractorFurigana;
-  }
