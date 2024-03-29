@@ -1,15 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var selectBox = document.getElementById('selectBox');
     var csvFilePath = 'csv/data.csv'; // CSVファイルのパス
-
-    // CSVファイルからデータを取得してセレクトボックスを生成する関数
-    function populateSelectBox(data) {
-        data.forEach(function(row) {
-            var option = document.createElement('option');
-            option.text = row[1]; // CSVファイルの2列目のデータをセレクトボックスのオプションに追加
-            selectBox.appendChild(option);
-        });
-    }
 
     // CSVファイルを読み込む関数
     function loadCSV(callback) {
@@ -28,17 +18,30 @@ document.addEventListener('DOMContentLoaded', function() {
         xhr.send();
     }
 
-    // CSVファイルのデータをパースする関数
+    // CSVファイルのデータをパースして指定の列を取得する関数
     function parseCSV(csvData) {
         var lines = csvData.split('\n');
         var result = [];
         lines.forEach(function(line) {
             var values = line.split(',');
+            // ダブルクォーテーションがあれば削除して追加
+            values = values.map(function(value) {
+                return value.replace(/^"|"$/g, '');
+            });
             result.push(values);
         });
         return result;
     }
 
-    // CSVファイルを読み込んでセレクトボックスを生成する
-    loadCSV(populateSelectBox);
+    // HTMLにデータを表示する関数
+    function displayData(data) {
+        var container = document.getElementById('dataContainer');
+        data.forEach(function(row) {
+            var html = '<div>2列目のデータ: ' + row[1] + ', 4列目のデータ: ' + row[3] + '</div>';
+            container.innerHTML += html;
+        });
+    }
+
+    // CSVファイルを読み込んでデータを表示する
+    loadCSV(displayData);
 });
