@@ -173,6 +173,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var contractorFurigana = document.getElementById("contractor_furigana").value;
 
     // 表示用の要素に取得したデータを表示
-    var displayElement = document.querySelector("input_contractorName");
-    displayElement.innerHTML = "保険契約者の氏名：" + contractorName + "<br>" + "保険契約者のフリガナ：" + contractorFurigana;
+    document.getElementById('contractorNameLabel').innerText =  contractorName;
+    document.getElementById('contractorFuriganaLabel').innerText =  contractorFurigana;
   }
