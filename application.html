@@ -426,9 +426,12 @@
 
             <table class="ta6">
               <tr>
-                <th>①</th>
+                <th rowspan="2">①</th>
                 <td>
                   被保険者の職業を選択してください。
+                </td>
+                <td style="width: 130px;">
+                  <div class="select-gender">
                   <select style="width: 120px;">
                      <option value="">　</option>
                      <option value="">会社員</option>
@@ -439,14 +442,24 @@
                      <option value="">学生</option>
                      <option value="">無職</option>
                      <option value="">その他</option>
-                    </select>                
+                    </select>   
+                  </div>
                 </td>
-                <td>
+              </tr>
+              <tr>
+                <td colspan="2">
                   <input type="text" name="その他" size="30" class="ws" autocomplete="off" placeholder="「その他」の場合はここに入力してください"></td>
               </tr>
-              <tr></tr>
+              <tr>
                 <th>②</th>
-                <td colspan="2"><input id="insured_furigana" type="text" name="フリガナ" size="30" class="ws" autocomplete="off"></td>
+                <td>現在入院中ですか。または医師から入院・手術を勧められていますか。</td>
+                <td>
+                <select style="width: 120px;">
+                     <option value="">　</option>
+                     <option value="">はい</option>
+                     <option value="">いいえ</option>
+                  </select>
+               </td>
               </tr>
             </table>
                     
