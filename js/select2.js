@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var csvFilePath = 'https://kizuna-ssi.net/csv/data.csv'; // CSVファイルのパス
+    var csvFilePath = 'csv/data.csv'; // CSVファイルのパス
 
     // CSVファイルを読み込む関数
     function loadCSV(callback) {
@@ -33,37 +33,31 @@ document.addEventListener('DOMContentLoaded', function() {
         return result;
     }
 
-    // selectBox4の選択状態に応じてselectBox2のオプションを更新する関数
-    function updateSelectBox2() {
+    // 2列目と4列目のデータをセレクトボックスに表示する関数（重複行を非表示にする）
+    function populateSelectBoxes(data) {
         var selectBox2 = document.getElementById('selectBox2');
         var selectBox4 = document.getElementById('selectBox4');
-        var selectedValue4 = selectBox4.value;
-
-        // selectBox4で選択された値と同じ行にあるデータをselectBox2に表示する
-        selectBox2.innerHTML = ''; // selectBox2の内容をクリア
-
-        var optionsToAdd = []; // selectBox2に追加するオプションの配列
         var seen = {}; // 重複チェック用のオブジェクト
 
         data.forEach(function(row) {
-            if (row[3] === selectedValue4 && !seen[row[1]]) {
-                optionsToAdd.push(row[1]); // selectBox2に追加する値を配列に追加
+            // 重複がない場合のみ追加
+            if (!seen[row[1]]) {
+                var option2 = document.createElement('option');
+                option2.text = row[1]; // 2列目のデータをセレクトボックスのオプションに追加
+                selectBox2.appendChild(option2);
                 seen[row[1]] = true;
             }
-        });
 
-        // 配列に追加された値をselectBox2にオプションとして追加
-        optionsToAdd.forEach(function(value) {
-            var option = document.createElement('option');
-            option.text = value;
-            selectBox2.appendChild(option);
+            // 重複がない場合のみ追加
+            if (!seen[row[3]]) {
+                var option4 = document.createElement('option');
+                option4.text = row[3]; // 4列目のデータをセレクトボックスのオプションに追加
+                selectBox4.appendChild(option4);
+                seen[row[3]] = true;
+            }
         });
     }
 
-    // CSVファイルを読み込んでデータを取得し、selectBox4のchangeイベントにupdateSelectBox2を関連付ける
-    loadCSV(function(data) {
-        window.data = data; // グローバル変数としてデータを保持
-        var selectBox4 = document.getElementById('selectBox4');
-        selectBox4.addEventListener('change', updateSelectBox2);
-    });
+    // CSVファイルを読み込んでセレクトボックスを生成する
+    loadCSV(populateSelectBoxes);
 });
