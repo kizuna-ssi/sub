@@ -150,12 +150,4 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("insured_birth_day").value = contractorBirthDay;
   }
 
-function calculate() {
-    // 加入コースの取得
-    var select_course = document.querySelector('category-select-1').value;
-    var sub_select_course = document.querySelector('sub-category-select-1').value;
 
-    // 加入コースを表示
-    document.getElementById('selectcourseLabel').innerText =  select_course;
-    document.getElementById('subselectcourseLabel').innerText =  sub_select_course;
-}
