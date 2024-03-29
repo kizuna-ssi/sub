@@ -1792,7 +1792,7 @@ opacity: 1;
     background-color: #ffffff;
 }
 
-.application hr {  
+.application .hr1 {  
 	border-top: 1px dotted #aaa;
 	margin: 50px;
 }
