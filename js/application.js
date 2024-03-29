@@ -149,3 +149,13 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("insured_birth_month").value = contractorBirthMonth;
     document.getElementById("insured_birth_day").value = contractorBirthDay;
   }
+
+function calculate() {
+    // 加入コースの取得
+    var select-course = document.querySelector('category-select-1').value;
+    var sub-select-course = document.querySelector('sub-category-select-1').value;
+
+    // 加入コースを表示
+    document.getElementById('select-courseLabel').innerText =  select-course;
+    document.getElementById('sub-select-courseLabel').innerText =  sub-select-course;
+}
