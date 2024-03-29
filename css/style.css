@@ -1792,7 +1792,10 @@ opacity: 1;
     background-color: #ffffff;
 }
 
-
+.application hr {  
+	border-top: 1px dotted #aaa;
+	margin: 50px;
+}
 
 .quotation .ta2 {
 	table-layout: fixed;
