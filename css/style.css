@@ -1741,6 +1741,7 @@ opacity: 1;
         font-size: 14px;
         color: #555;
         text-align: center;
+	width: 100%;
 }
 
 .application .select-birthday {
