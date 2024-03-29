@@ -1767,9 +1767,11 @@ opacity: 1;
 } 
 
 .application form .btns{
+	width: 100%;
+	max-width: 800px;
 	display: inline-block;
 	vertical-align: middle;
-	margin: 0 10px;
+	margin: 25px;
 	padding: 6px 25px;
 	color: #ffffff;
 	font-weight: bold;
