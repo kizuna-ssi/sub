@@ -1797,3 +1797,7 @@ opacity: 1;
 	width: 50px;
 }
 }
+
+.hide-on-screen {
+	display:none;
+}
