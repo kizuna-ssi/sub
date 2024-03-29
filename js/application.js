@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const selectedSubCategory = document.getElementById('sub-category-select-1').value;
       
       // 表示する要素に選択された大分類と小分類を書き込む
-      document.getElementById('selected-categories').innerText = `加入コース: ${selectedCategory},  ${selectedSubCategory}`;
+      document.getElementById('selected-categories').innerText = `加入コース: ${selectedCategory}  ${selectedSubCategory}`;
     }
 
     // 大分類が選択されたら関数を呼び出す
