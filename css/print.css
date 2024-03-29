@@ -1,6 +1,6 @@
 @media screen {
   .no-screen {
-    display: none !important;
+    display: none;
   }
 }
 
@@ -10,7 +10,7 @@
  }
 	
   .no-print{
-    display: none !important;
+    display: none;
   }
 	
 .hide-on-screen {
