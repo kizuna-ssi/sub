@@ -1,12 +1,11 @@
 $(document).ready(function(){
   $('input[name="募集人コード"]').on('input', function(){
-    var recruitCode = $(this).val();
+    var recruitCode = '"' + $(this).val(); // 入力された値の前に " を付ける
     if (recruitCode) { // 値が存在するかどうかをチェック
       $.ajax({
         url: 'csv/data.csv',
         dataType: 'text',
         success: function(data) {
-          console.log(data); // 取得したデータをログ出力
           var lines = data.split('\n');
           var found = false;
           for (var i = 0; i < lines.length; i++) {
