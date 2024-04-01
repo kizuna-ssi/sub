@@ -113,3 +113,25 @@ $(function(){
         $('#footer').load('https://kizuna-ssi.net/footer.html'); // #footerにfooter.htmlを読み込む
         });
 
+
+//　CSVの読み込み
+  $(document).ready(function(){
+    $('input[name="募集人コード"]').on('input', function(){
+      var recruitCode = $(this).val();
+      $.ajax({
+        url: 'csv/data.csv',
+        dataType: 'text',
+        success: function(data) {
+          var lines = data.split('\n');
+          for (var i = 0; i < lines.length; i++) {
+            var parts = lines[i].split('|');
+            if (parts[0] === recruitCode) {
+              $('input[name="募集人名"]').val(parts[1]);
+              $('input[name="代理店名"]').val(parts[3]);
+              break;
+            }
+          }
+        }
+      });
+    });
+  });
