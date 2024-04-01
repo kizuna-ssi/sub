@@ -490,19 +490,21 @@
          
           <h3>代理店・募集人<span style="font-size: 0.7em;">（会社・担当）</span></h3><hr>
             
-            <table class="ta6">  
+            <table class="ta6">
+              <tr>
+                <th>募集人コード</th>
+                <td colspan="3">
+                  <input type="text" name="募集人コード" size="30" class="ws" required="required" autocomplete="on" placeholder="半角数字6桁" pattern="\d*">
+                </td>
+              </tr>
               <tr>                 
                 <th>代理店</th>
                 <td style="width: 280px;">
-                  <div class="select-course">
-                  <select id="selectBox4"></select>
-                  </div>
+                  <input type="text" name="代理店名" size="30" class="ws" required="required" autocomplete="on">
                 </td>           
                 <th>募集人</th>
                 <td>
-                  <div class="select-course">
-                  <select id="selectBox2"></select>
-                  </div>
+                  <input type="text" name="募集人名" size="30" class="ws" required="required" autocomplete="on">
                 </td>
               </tr>
             </table>
@@ -567,7 +569,7 @@
 
 <script src="js/application.js"></script>  
 <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
-
+<script src="js/recruitcode.js"></script>
 
 </body>
 </html>
