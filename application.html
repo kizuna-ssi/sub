@@ -413,7 +413,7 @@
                 <th style="width:180px;">職業</th>
                 <td style="width:218px;">
                   <div class="select-gender">
-                    <select>
+                    <select id="insured_job">
                      <option value="">　</option>
                      <option value="">会社員</option>
                      <option value="">会社役員</option>
@@ -438,7 +438,7 @@
                 <th style="width:180px;">保険契約者から見た続柄</th>
                 <td style="width:150px;">
                   <div class="select-gender">
-                    <select>
+                    <select id="insured_relationship">
                      <option value="">　</option>                    
                      <option value="">本人</option>
                      <option value="">配偶者</option>
@@ -472,7 +472,7 @@
                 <th style="width:180px;">被保険者から見た続柄</th>
                 <td style="width:150px;">
                   <div class="select-gender">
-                    <select>
+                    <select id="beneficiary_relationship">
                      <option value="">　</option>
                      <option value="">配偶者</option>
                      <option value="">子</option>
@@ -494,17 +494,17 @@
               <tr>
                 <th>募集人コード</th>
                 <td colspan="3">
-                  <input type="text" name="募集人コード" size="30" class="ws" required="required" autocomplete="on" placeholder="半角数字6桁" pattern="\d*">
+                  <input type="text" name="募集人コード" size="30" class="ws" required="required" autocomplete="on" placeholder="半角数字6桁" pattern="\d*" id="recruitcode">
                 </td>
               </tr>
               <tr>                 
                 <th>代理店</th>
                 <td style="width: 280px;">
-                  <input type="text" name="代理店名" size="30" class="ws" required="required" autocomplete="on">
+                  <input type="text" name="代理店名" size="30" class="ws" required="required" autocomplete="on"  id="agencyname">
                 </td>           
                 <th>募集人</th>
                 <td>
-                  <input type="text" name="募集人名" size="30" class="ws" required="required" autocomplete="on">
+                  <input type="text" name="募集人名" size="30" class="ws" required="required" autocomplete="on"  id="recruitname">
                 </td>
               </tr>
             </table>
@@ -529,27 +529,71 @@
       <table>
         <tr>
           <th>加入コース</th><td><div class="category_select_1Label"></td>
+        </tr>  
+        <tr>
           <th>保険金額・保険料</th><td><div class="sub_category_select_1Label"></td>
         </tr>  
         <tr>
           <th>保険契約者・氏名</th><td><div class="contractor_nameLabel"></td>
+        </tr>  
+        <tr>
           <th>保険契約者・フリガナ</th><td><div class="contractor_furiganaLabel"></td>
+        </tr>  
+        <tr>
           <th>保険契約者・性別</th><td><div class="contractor_genderLabel"></td>
-          <th>保険契約者・生年月日</th><td><div class="contractor_birth_yearLabel"<div class="contractor_birth_monthLabel"><div class="contractor_birth_dayLabel">></td>
+          </tr>  
+        <tr>
+          <th>保険契約者・生年月日</th>
+          <td>
+            <div class="contractor_birth_yearLabel"</div>
+            <div class="contractor_birth_monthLabel">
+            <div class="contractor_birth_dayLabel"></td>
+              </tr>  
+        <tr>
           <th>保険契約者・郵便番号</th><td><div class="contractor_postal_codeLabel"></td>
+          </tr>  
+        <tr>
           <th>保険契約者・住所</th><td><div class="contractor_addressLabel"></td>
+          </tr>  
+        <tr>
           <th>保険契約者・電話番号</th><td><div class="contractor_telLabel"></td>
+          </tr>  
+        <tr>
           <th>保険契約者・メール</th><td><div class="contractor_emailLabel"></td>
         </tr>  
         <tr>
           <th>保険契約者・氏名</th><td><div class="insured|_nameLabel"></td>
+          </tr>  
+        <tr>
           <th>保険契約者・フリガナ</th><td><div class="insured|_furiganaLabel"></td>
+          </tr>  
+        <tr>
           <th>保険契約者・性別</th><td><div class="insured|_genderLabel"></td>
-          <th>保険契約者・生年月日</th><td><div class="insured|_birth_yearLabel"<div class="insured|_birth_monthLabel"><div class="insured|_birth_dayLabel">></td>
+          </tr>  
+        <tr>
+          <th>保険契約者・生年月日</th>
+          <td>
+            <div class="insured|_birth_yearLabel">
+              <div class="insured|_birth_monthLabel">]
+                <div class="insured|_birth_dayLabel"></td>
+        </tr>  
+        <tr>
           <th>保険契約者・郵便番号</th><td><div class="insured|_postal_codeLabel"></td>
+          </tr>  
+        <tr>
           <th>保険契約者・住所</th><td><div class="insured|_addressLabel"></td>
+          </tr>  
+        <tr>
           <th>保険契約者・電話番号</th><td><div class="insured|_telLabel"></td>
+          </tr>  
+        <tr>
           <th>保険契約者・メール</th><td><div class="insured|_emailLabel"></td>
+          </tr>  
+        <tr>
+          <th>保険契約者・職業</th><td><div class="insured_jobLabel"></td>
+          </tr>  
+        <tr>
+          <th>保険契約者・続柄</th><td><div class="insured_relationshipLabel"></td>  
         </tr> 
     </div>
    </section>
