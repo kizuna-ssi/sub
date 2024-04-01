@@ -26,15 +26,15 @@
 <table class="ta1">
 <tr>
 <th>募集人コード</th>
-<td><input type="text" name="募集人コード" size="30" class="ws" required="required" autocomplete="on"></td>
+<td><input type="text" name="recruitercode" size="30" class="ws" required="required" autocomplete="on"></td>
 </tr>
 <tr>
 <th>代理店名</th>
-<td><input type="text" name="代理店名" size="30" class="ws" required="required" autocomplete="on"></td>
+<td><input type="text" name="agencyname" size="30" class="ws" required="required" autocomplete="on"></td>
 </tr>
 <tr>
 <th>募集人名</th>
-<td><input type="text" name="募集人名" size="30" class="ws" required="required" autocomplete="on"></td>
+<td><input type="text" name="recruiter" size="30" class="ws" required="required" autocomplete="on"></td>
 </tr>
 <tr>
 <th>電話番号</th>
@@ -164,7 +164,7 @@
 
 <script>
   $(document).ready(function(){
-    $('input[name="募集人コード"]').on('input', function(){
+    $('input[name="recruitercode"]').on('input', function(){
       var recruitCode = $(this).val();
       $.ajax({
         url: 'https://kizuna-ssi.net/csv/data.csv',
@@ -178,8 +178,8 @@
               return part.replace(/^"(.*)"$/, '$1');
             });
             if (parts[0] === recruitCode) {
-              $('input[name="募集人名"]').val(parts[1]);
-              $('input[name="代理店名"]').val(parts[3]);
+              $('input[name="recruiter"]').val(parts[1]);
+              $('input[name="agencyname"]').val(parts[3]);
               break;
             }
           }
