@@ -1,13 +1,12 @@
-  $(document).ready(function(){
-    $('input[name="募集人コード"]').on('input', function(){
-      var recruitCode = $(this).val();
+$(document).ready(function(){
+  $('input[name="募集人コード"]').on('input', function(){
+    var recruitCode = $(this).val();
+    if (recruitCode) { // 値が存在するかどうかをチェック
       $.ajax({
         url: 'csv/data.csv',
         dataType: 'text',
         success: function(data) {
-          console.log(data); // 取得したデータをログ出力
           var lines = data.split('\n');
-          var recruitCode = String($(this).val()); // 募集人コードを文字列として取得する
           var found = false;
           for (var i = 0; i < lines.length; i++) {
             var parts = lines[i].split('","');
@@ -28,5 +27,6 @@
           }
         }
       });
-    });
+    }
   });
+});
