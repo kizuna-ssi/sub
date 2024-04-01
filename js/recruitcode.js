@@ -1,4 +1,3 @@
-<script>
   $(document).ready(function(){
     $('input[name="募集人コード"]').on('input', function(){
       var recruitCode = $(this).val();
@@ -30,4 +29,3 @@
       });
     });
   });
-</script>
