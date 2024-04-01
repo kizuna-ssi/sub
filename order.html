@@ -165,7 +165,7 @@
 <script>
 $(document).ready(function(){
   $('input[name="募集人コード"]').on('input', function(){
-    var recruitCode = $(this).val().replace(/^"(.*)"$/, '$1'); // 募集人コードから `"` を削除
+    var recruitCode = '"' + $(this).val(); // 入力された値の前に " を付ける
     if (recruitCode) { // 値が存在するかどうかをチェック
       $.ajax({
         url: 'csv/data.csv',
@@ -195,6 +195,7 @@ $(document).ready(function(){
     }
   });
 });
+
 
 </script>
   
