@@ -6,6 +6,7 @@ $(document).ready(function(){
         url: 'csv/data.csv',
         dataType: 'text',
         success: function(data) {
+          console.log(data); // 取得したデータをログ出力
           var lines = data.split('\n');
           var found = false;
           for (var i = 0; i < lines.length; i++) {
