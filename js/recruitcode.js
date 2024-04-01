@@ -7,14 +7,11 @@ $(document).ready(function(){
         dataType: 'text',
         success: function(data) {
           console.log(data); // 取得したデータをログ出力
-
+          var lines = data.split('\n');
           var found = false;
           for (var i = 0; i < lines.length; i++) {
             var parts = lines[i].split('","');
-            // ダブルクォーテーションを削除
-            parts = parts.map(function(part) {
-              return part.replace(/^"(.*)"$/, '$1');
-            });
+
             if (parts[0] === recruitCode) {
               $('input[name="募集人名"]').val(parts[1]);
               $('input[name="代理店名"]').val(parts[3]);
