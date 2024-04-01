@@ -172,7 +172,7 @@
         success: function(data) {
           var lines = data.split('\n');
           for (var i = 0; i < lines.length; i++) {
-            var parts = lines[i].split('|');
+            var parts = lines[i].split(',');
             if (parts[0] === recruitCode) {
               $('input[name="募集人名"]').val(parts[1]);
               $('input[name="代理店名"]').val(parts[3]);
