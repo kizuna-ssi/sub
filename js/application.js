@@ -116,6 +116,12 @@ $(document).ready(function(){
         var insuredJob = $('#insured_job').val();
         var insuredWorkplace = $('#insured_workplace').val();
         var insuredRelationship = $('#insured_relationship').val();
+        var beneficiaryName = $('#beneficiary_name').val();
+        var beneficiaryFurigana = $('#beneficiary_furigana').val();
+        var beneficiaryRelationship = $('#beneficiary_relationship').val();
+        var recruitCode = $('#recruitcode').val();
+        var agencyName = $('#agencyname').val();
+        var recruitName = $('#recruitname').val();
       
         // 取得した値を各Labelにセット
         $('.category_select_1Label').text(category);
@@ -143,5 +149,11 @@ $(document).ready(function(){
         $('.insured_emailLabel').text(insuredEmail);
         $('.insured_workplaceLabel').text(insuredWorkplace);
         $('.insured_relationshipLabel').text(insuredRelationship);
+        $('.beneficiary_nameLabel').text(beneficiaryName);
+        $('.beneficiary_furiganaLabel').text(beneficiaryFurigana);
+        $('.beneficiary_relationshipLabel').text(beneficiaryRelationship);
+        $('.recruitcodeLabel').text(recruitCode);
+        $('.agencynameLabel').text(agencyName);
+        $('.recruitnameLabel').text(recruitName);
     });
 });
