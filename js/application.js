@@ -111,10 +111,11 @@ $(document).ready(function(){
         $('.contractor_nameLabel').text(contractorName);
         $('.contractor_furiganaLabel').text(contractorFurigana);
         $('.contractor_genderLabel').text(contractorGender);
-        $('.contractor_contractor_birth_yearLabel').text(contractorBirthYear);
-        $('.contractor_contractor_birth_monthLabel').text(contractorBirthMonth);
-        $('.contractor_contractor_birth_dayLabel').text(contractorBirthDay);
+        $('.contractor_birth_yearLabel').text(contractorBirthYear);
+        $('.contractor_birth_monthLabel').text(contractorBirthMonth);
+        $('.contractor_birth_dayLabel').text(contractorBirthDay);
         $('.contractor_postal_codeLabel').text(contractorPpostalCode);
+        $('.contractor_addressLabel').text(contractorAddress);
         $('.contractor_telLabel').text(contractorTel);
         $('.contractor_emailLabel').text(contractorEmail);
     });
