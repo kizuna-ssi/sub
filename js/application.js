@@ -85,3 +85,23 @@ categorySelect1.addEventListener('input', () => {
     document.getElementById("insured_birth_month").value = contractorBirthMonth;
     document.getElementById("insured_birth_day").value = contractorBirthDay;
   }
+
+
+$(document).ready(function(){
+    // フォームの要素が変更された時の処理
+    $('.form input, .form select').change(function(){
+        // フォームの各要素の値を取得
+        var category = $('#category-select-1').val();
+        var subCategory = $('#sub-category-select-1').val();
+        var contractorName = $('#contractor_name').val();
+        var contractorFurigana = $('#contractor_furigana').val();
+        // 他のフォーム要素についても同様に取得
+
+        // 取得した値を各Labelにセット
+        $('.category_select_1Label').text(category);
+        $('.sub_category_select_1Label').text(subCategory);
+        $('.contractor_nameLabel').text(contractorName);
+        $('.contractor_furiganaLabel').text(contractorFurigana);
+        // 他のLabelについても同様にセット
+    });
+});
