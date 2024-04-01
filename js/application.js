@@ -103,16 +103,16 @@ $(document).ready(function(){
         var contractorAddress = $('#contractor_address').val();
         var contractorTel = $('#contractor_tel').val();
         var contractorEmail = $('#contractor_email').val();
-        var insuredName = $('#insured|_name').val();
-        var insuredFurigana = $('#insured|_furigana').val();
-        var insuredGender = $('#insured|_gender').val();
-        var insuredBirthYear = $('#insured|_birth_year').val();
-        var insuredBirthMonth = $('#insured|_birth_month').val();
-        var insuredBirthDay = $('#insured|_birth_day').val();
-        var insuredPpostalCode = $('#insured|_postal_code').val();
-        var insuredAddress = $('#insured|_address').val();
-        var insuredTel = $('#insured|_tel').val();
-        var insuredEmail = $('#insured|_email').val();
+        var insuredName = $('#insured_name').val();
+        var insuredFurigana = $('#insured_furigana').val();
+        var insuredGender = $('#insured_gender').val();
+        var insuredBirthYear = $('#insured_birth_year').val();
+        var insuredBirthMonth = $('#insured_birth_month').val();
+        var insuredBirthDay = $('#insured_birth_day').val();
+        var insuredPpostalCode = $('#insured_postal_code').val();
+        var insuredAddress = $('#insured_address').val();
+        var insuredTel = $('#insured_tel').val();
+        var insuredEmail = $('#insured_email').val();
 
       
         // 取得した値を各Labelにセット
