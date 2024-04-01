@@ -95,13 +95,27 @@ $(document).ready(function(){
         var subCategory = $('#sub-category-select-1').val();
         var contractorName = $('#contractor_name').val();
         var contractorFurigana = $('#contractor_furigana').val();
-        // 他のフォーム要素についても同様に取得
+        var contractorGender = $('#contractor_gender').val();
+        var contractorBirthYear = $('#contractor_birth_year').val();
+        var contractorBirthMonth = $('#contractor_birth_month').val();
+        var contractorBirthDay = $('#contractor_birth_day').val();
+        var contractorPpostalCode = $('#contractor_postal_code').val();
+        var contractorAddress = $('#contractor_address').val();
+        var contractorTel = $('#contractor_tel').val();
+        var contractorEmail = $('#contractor_email').val();
 
+      
         // 取得した値を各Labelにセット
         $('.category_select_1Label').text(category);
         $('.sub_category_select_1Label').text(subCategory);
         $('.contractor_nameLabel').text(contractorName);
         $('.contractor_furiganaLabel').text(contractorFurigana);
-        // 他のLabelについても同様にセット
+        $('.contractor_genderLabel').text(contractorGender);
+        $('.contractor_contractor_birth_yearLabel').text(contractorBirthYear);
+        $('.contractor_contractor_birth_monthLabel').text(contractorBirthMonth);
+        $('.contractor_contractor_birth_dayLabel').text(contractorBirthDay);
+        $('.contractor_postal_codeLabel').text(contractorPpostalCode);
+        $('.contractor_telLabel').text(contractorTel);
+        $('.contractor_emailLabel').text(contractorEmail);
     });
 });
