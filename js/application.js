@@ -113,7 +113,9 @@ $(document).ready(function(){
         var insuredAddress = $('#insured_address').val();
         var insuredTel = $('#insured_tel').val();
         var insuredEmail = $('#insured_email').val();
-
+        var insuredJob = $('#insured_job').val();
+        var insuredWorkplace = $('#insured_workplace').val();
+        var insuredRelationship = $('#insured_relationship').val();
       
         // 取得した値を各Labelにセット
         $('.category_select_1Label').text(category);
@@ -137,6 +139,9 @@ $(document).ready(function(){
         $('.insured_postal_codeLabel').text(insuredPpostalCode);
         $('.insured_addressLabel').text(insuredAddress);
         $('.insured_telLabel').text(insuredTel);
+        $('.insured_jobLabel').text(insuredJob);
         $('.insured_emailLabel').text(insuredEmail);
+        $('.insured_workplaceLabel').text(insuredWorkplace);
+        $('.insured_relationshipLabel').text(insuredRelationship);
     });
 });
