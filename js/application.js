@@ -103,6 +103,16 @@ $(document).ready(function(){
         var contractorAddress = $('#contractor_address').val();
         var contractorTel = $('#contractor_tel').val();
         var contractorEmail = $('#contractor_email').val();
+        var insuredName = $('#insured|_name').val();
+        var insuredFurigana = $('#insured|_furigana').val();
+        var insuredGender = $('#insured|_gender').val();
+        var insuredBirthYear = $('#insured|_birth_year').val();
+        var insuredBirthMonth = $('#insured|_birth_month').val();
+        var insuredBirthDay = $('#insured|_birth_day').val();
+        var insuredPpostalCode = $('#insured|_postal_code').val();
+        var insuredAddress = $('#insured|_address').val();
+        var insuredTel = $('#insured|_tel').val();
+        var insuredEmail = $('#insured|_email').val();
 
       
         // 取得した値を各Labelにセット
@@ -118,5 +128,15 @@ $(document).ready(function(){
         $('.contractor_addressLabel').text(contractorAddress);
         $('.contractor_telLabel').text(contractorTel);
         $('.contractor_emailLabel').text(contractorEmail);
+        $('.insured_nameLabel').text(insuredName);
+        $('.insured_furiganaLabel').text(insuredFurigana);
+        $('.insured_genderLabel').text(insuredGender);
+        $('.insured_birth_yearLabel').text(insuredBirthYear);
+        $('.insured_birth_monthLabel').text(insuredBirthMonth);
+        $('.insured_birth_dayLabel').text(insuredBirthDay);
+        $('.insured_postal_codeLabel').text(insuredPpostalCode);
+        $('.insured_addressLabel').text(insuredAddress);
+        $('.insured_telLabel').text(insuredTel);
+        $('.insured_emailLabel').text(insuredEmail);
     });
 });
