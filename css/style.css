@@ -1762,8 +1762,8 @@ opacity: 1;
 .application_print .ta1 {
 	border: 1px solid #ccc;
 	width: 100%;
-	max-width: 2500px;
-	margin: auto; 
+	margin: auto;
+	font-size: 15px;
 }
 
 .application_print .ta1 tr{
@@ -1774,11 +1774,12 @@ opacity: 1;
 
 .application_print .ta1 th{
 	background-color: #eeeeee;
+	font-size: 15px;
 }
 
 .application_print .ta1 td{
-	padding: 0px 35px 0px 35px;
 	text-align: left;
+	font-size: 15px;
 }
 
 .quotation .ta2 {
