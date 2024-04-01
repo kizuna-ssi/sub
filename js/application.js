@@ -61,3 +61,27 @@ categorySelect1.addEventListener('input', () => {
     }
   });
 });
+
+  function copyContractorInfo() {
+    var contractorName = document.getElementById("contractor_name").value;
+    var contractorFurigana = document.getElementById("contractor_furigana").value;
+    var contractorPostalCode = document.getElementById("contractor_postal_code").value;
+    var contractorAddress = document.getElementById("contractor_address").value;
+    var contractorTel = document.getElementById("contractor_tel").value;
+    var contractorEmail = document.getElementById("contractor_email").value;
+    var contractorGender = document.getElementById("contractor_gender").value;
+    var contractorBirthYear = document.getElementById("contractor_birth_year").value;
+    var contractorBirthMonth = document.getElementById("contractor_birth_month").value;
+    var contractorBirthDay = document.getElementById("contractor_birth_day").value;
+
+    document.getElementById("insured_name").value = contractorName;
+    document.getElementById("insured_furigana").value = contractorFurigana;
+    document.getElementById("insured_postal_code").value = contractorPostalCode;
+    document.getElementById("insured_address").value = contractorAddress;
+    document.getElementById("insured_tel").value = contractorTel;
+    document.getElementById("insured_email").value = contractorEmail;
+    document.getElementById("insured_gender").value = contractorGender;
+    document.getElementById("insured_birth_year").value = contractorBirthYear;
+    document.getElementById("insured_birth_month").value = contractorBirthMonth;
+    document.getElementById("insured_birth_day").value = contractorBirthDay;
+  }
