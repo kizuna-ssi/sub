@@ -1763,7 +1763,7 @@ opacity: 1;
 	border: 1px solid #ccc;
 	width: 100%;
 	margin: auto;
-	font-size: 15px;
+	font-size: 10px;
 }
 
 .application_print .ta1 tr{
@@ -1774,12 +1774,12 @@ opacity: 1;
 
 .application_print .ta1 th{
 	background-color: #eeeeee;
-	font-size: 15px;
+	font-size: 10px;
 }
 
 .application_print .ta1 td{
 	text-align: left;
-	font-size: 15px;
+	font-size: 10px;
 }
 
 .application_print h2{
