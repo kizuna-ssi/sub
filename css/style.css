@@ -1534,28 +1534,6 @@ opacity: 1;
 }
 }
 
-.application .ta2 {
-	border: 1px solid #fff;
-	width: 100%;
-	max-width: 800px;
-	margin: 0px auto 35px auto; 
-}
-
-.application .ta2 tr{
-	border-left: 1px solid #fff;
-	border-right: 1px solid #fff;
-	border-bottom: 1px solid #fff;
-}
-
-.application .ta2 th{
-	background-color: #eeeeee;
-}
-
-.application .ta2 td{
-	padding: 0px 35px 0px 35px;
-	text-align: left;
-}
-
 .application .ta3 {
 	border-top: 1px solid #fff;
 	width: 100%;
@@ -1580,57 +1558,6 @@ opacity: 1;
 	padding: 25px;
 }
 
-.application .ta4 {
-	border-top: 1px solid #ccc;
-	width: 100%;
-	min-width: 500px;
-	table-layout: fixed;
-	margin: auto; 
-}
-
-
-.application .ta4 tr{
-	border-bottom: 1px solid #ccc;
-}
-
-.application .ta4 th{
-	text-align: center;
-	font-size: 0.8em;
-	background-color: #eeeeee;
-}
-
-.application .ta4 td{
-	text-align: center;
-	font-size: 0.8em;
-	padding: 5px;
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
-}
-
-.application .ta5 {
-	border-top: 1px solid #ccc;
-	width: 50%;
-	table-layout: fixed;
-	margin: 20px 0px 0px 0px; 
-}
-
-.application .ta5 tr{
-	border-bottom: 1px solid #ccc;
-}
-
-.application .ta5 th{
-	text-align: center;
-	font-size: 0.8em;
-	background-color: #eeeeee;
-}
-
-.application .ta5 td{
-	text-align: center;
-	font-size: 0.8em;
-	padding: 5px;
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
-}
 
 .application .ta6 {
 	border-top: 1px solid #ccc;
@@ -1830,6 +1757,28 @@ opacity: 1;
 .application .hr1 {  
 	border-top: 1px solid #fff;
 	margin: 50px;
+}
+
+.application2 .ta1 {
+	border: 1px solid #fff;
+	width: 100%;
+	max-width: 800px;
+	margin: 0px auto 35px auto; 
+}
+
+.application2 .ta1 tr{
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.application2 .ta1 th{
+	background-color: #eeeeee;
+}
+
+.application2 .ta1 td{
+	padding: 0px 35px 0px 35px;
+	text-align: left;
 }
 
 .quotation .ta2 {
