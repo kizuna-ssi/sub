@@ -7,6 +7,7 @@
         success: function(data) {
           console.log(data); // 取得したデータをログ出力
           var lines = data.split('\n');
+          var recruitCode = String($(this).val()); // 募集人コードを文字列として取得する
           var found = false;
           for (var i = 0; i < lines.length; i++) {
             var parts = lines[i].split('","');
