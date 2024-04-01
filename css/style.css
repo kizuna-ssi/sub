@@ -1759,24 +1759,24 @@ opacity: 1;
 	margin: 50px;
 }
 
-.application2 .ta1 {
+.application_print .ta1 {
 	border: 1px solid #ccc;
 	width: 100%;
 	max-width: 2500px;
 	margin: auto; 
 }
 
-.application2 .ta1 tr{
+.application_print .ta1 tr{
 	border-left: 1px solid #ccc;
 	border-right: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 }
 
-.application2 .ta1 th{
+.application_print .ta1 th{
 	background-color: #eeeeee;
 }
 
-.application2 .ta1 td{
+.application_print .ta1 td{
 	padding: 0px 35px 0px 35px;
 	text-align: left;
 }
