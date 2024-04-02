@@ -1760,15 +1760,15 @@ opacity: 1;
 }
 
 .application_print .ta1 {
-	border: 1px solid #696969;
+	border: 1px solid #fff;
 	width: 100%;
 	margin: auto;
 }
 
 .application_print .ta1 tr{
-	border-left: 1px solid #696969;
-	border-right: 1px solid #696969;
-	border-bottom: 1px solid #696969;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
 }
 
 .application_print .ta1 th{
@@ -1782,7 +1782,7 @@ opacity: 1;
 	text-align: left;
 	font-size: 10px;
 	margin: auto;
-	padding: 1px;
+	padding: 20px;
 }
 
 
