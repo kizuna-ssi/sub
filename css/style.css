@@ -1814,6 +1814,14 @@ opacity: 1;
 	font-size: 10px;
 	margin: auto;
 	padding: 10px;
+	font-weight: normal;
+}
+
+.application_print .ta2 caption {
+	font-weight: bold;
+	padding: 10px 5px;
+	background: #eee;
+	margin: 15px;
 }
 
 .quotation .ta2 {
