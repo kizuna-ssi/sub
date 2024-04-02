@@ -1767,7 +1767,6 @@ opacity: 1;
 .application_print .ta1 {
 	width: 100%;
 	margin: auto;
-	border-radius: 0% 0% 20% 20%;
 }
 
 .application_print .ta1 tr{
@@ -1775,7 +1774,6 @@ opacity: 1;
 }
 
 .application_print .ta1 th{
-	border: 5px solid #696969;
 	background-color: #696969;
 	color: #fff;
 	width: 50%;
