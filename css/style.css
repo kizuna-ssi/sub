@@ -1778,6 +1778,13 @@ opacity: 1;
 	padding: 20px;
 }
 
+.application_print .ta1 td{
+	text-align: left;
+	font-size: 10px;
+	margin: auto;
+	padding: 1px;
+}
+
 
 .application_print .ta2 {
 	border: 1px solid #ccc;
