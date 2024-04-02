@@ -1759,9 +1759,15 @@ opacity: 1;
 	margin: 50px;
 }
 
+.application_print p {
+	margin: auto;
+	padding: 5px;
+}	
+	
 .application_print .ta1 {
 	width: 100%;
 	margin: auto;
+	border-radius: 0% 0% 20% 20%;
 }
 
 .application_print .ta1 tr{
