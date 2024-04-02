@@ -20,7 +20,10 @@
 main{
     padding-top: 0px;
   }
-	
+
+.page-break {
+    page-break-after: always;
+}
 	
 }
 
