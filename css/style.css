@@ -1783,10 +1783,31 @@ opacity: 1;
 	font-size: 10px;
 }
 
-.application_print h2{
+.application_print .ta2 {
+	border: 1px solid #ccc;
+	width: 100%;
+	margin: auto;
+	font-size: 10px;
+}
+
+.application_print .ta2 tr{
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.application_print .ta2 th{
+	background-color: #eee;
+	font-size: 10px;
+	margin: auto;
+	padding: 1px;
+}
+
+.application_print .ta2 td{
 	text-align: left;
-	font-size: 20px;
-	font-weight: bold;
+	font-size: 10px;
+	margin: auto;
+	padding: 1px;
 }
 
 .quotation .ta2 {
