@@ -91,7 +91,9 @@ $(document).ready(function(){
     // フォームの要素が変更された時の処理
     $('.form input, .form select').change(function(){
         // フォームの各要素の値を取得
-        var applicationDate = $('#application_date').val();
+        var applicationDateYear = $('#application_date_year').val();
+        var applicationDateMonth = $('#application_date_month').val();
+        var applicationDateDay = $('#application_date_day').val();
         var category = $('#category-select-1').val();
         var subCategory = $('#sub-category-select-1').val();
         var contractorName = $('#contractor_name').val();
@@ -125,7 +127,9 @@ $(document).ready(function(){
         var recruitName = $('#recruitname').val();
       
         // 取得した値を各Labelにセット
-        $('.application_dateLabel').text(applicationDate);
+        $('.application_date_yearLabel').text(applicationDateYear);
+        $('.application_date_monthLabel').text(applicationDateMonth);
+        $('.application_date_dayLabel').text(applicationDateDay);
         $('.category_select_1Label').text(category);
         $('.sub_category_select_1Label').text(subCategory);
         $('.contractor_nameLabel').text(contractorName);
