@@ -1818,7 +1818,6 @@ opacity: 1;
 	margin: auto;
 	padding: 10px;
 	font-weight: normal;
-	max-width: 800px;
 }
 
 .application_print .ta2 caption {
@@ -1827,6 +1826,37 @@ opacity: 1;
 	background: #eee;
 	margin: 15px;
 }
+
+.application_print .ta3 {
+	width: 90%;
+	margin: auto;
+	font-size: 10px;
+}
+
+.application_print .ta3 tr{
+
+}
+
+.application_print .ta3 th{
+	border: 1px solid #ccc;
+	background-color: #eee;
+	font-size: 10px;
+	margin: auto;
+	padding: 1px;
+	width: 25%;
+}
+
+.application_print .ta3 td{
+	border: 1px solid #ccc;
+	background-color: #fff;
+	color: #555;
+	text-align: left;
+	font-size: 10px;
+	margin: auto;
+	padding: 10px;
+	font-weight: normal;
+}
+
 
 .quotation .ta2 {
 	table-layout: fixed;
