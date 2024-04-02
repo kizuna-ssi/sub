@@ -1821,6 +1821,7 @@ opacity: 1;
 	margin: auto;
 	padding: 10px;
 	font-weight: normal;
+	max-width: 800px;
 }
 
 .application_print .ta2 caption {
