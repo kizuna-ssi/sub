@@ -1844,13 +1844,14 @@ opacity: 1;
 	margin: auto;
 	padding: 1px;
 	width: 25%;
+	text-align: center;
 }
 
 .application_print .ta3 td{
 	border: 1px solid #ccc;
 	background-color: #fff;
 	color: #555;
-	text-align: left;
+	text-align: center;
 	font-size: 10px;
 	margin: auto;
 	padding: 10px;
