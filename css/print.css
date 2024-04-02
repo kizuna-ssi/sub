@@ -22,7 +22,8 @@ main{
   }
 
 .page-break {
-    page-break-after: always;
+    break-before: always;
+    margin-bottom: 30px;
 }
 	
 }
