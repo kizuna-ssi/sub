@@ -1761,6 +1761,7 @@ opacity: 1;
 
 .application_print p {
 	margin: auto;
+	padding-left: 20px;
 }	
 	
 .application_print .ta1 {
