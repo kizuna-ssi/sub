@@ -106,11 +106,11 @@ $(function() {
 
 //　ヘッダー・フッターの読み込み
 $(function(){
-        $('#header').load('https://kizuna-ssi.net/header.html'); // #headerにheader.htmlを読み込む
+        $('#header').load('header.html'); // #headerにheader.htmlを読み込む
         });
 
 $(function(){
-        $('#footer').load('https://kizuna-ssi.net/footer.html'); // #footerにfooter.htmlを読み込む
+        $('#footer').load('footer.html'); // #footerにfooter.htmlを読み込む
         });
 
 
