@@ -2,10 +2,6 @@
 
 
 
-/*リセットCSS（sanitize.css）の読み込み
----------------------------------------------------------------------------*/
-@import url("https://unpkg.com/sanitize.css");
-
 /*Font Awesomeの読み込み
 ---------------------------------------------------------------------------*/
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
@@ -931,7 +927,7 @@ html, body {
 	display: flex;					/*flexボックスを使う指定*/
 	justify-content: space-between;	/*並びかたの種類の指定*/
 	flex-direction: column;			/*子要素を縦並びにする*/
-	width: 32%;						/*幅。３列になります。*/
+	width: 25%;						/*幅。３列になります。*/
 	margin-right: 2%;
 }
 
