@@ -920,6 +920,7 @@ html, body {
 .list-container {
 	display: flex;		/*flexボックスを使う指定*/
 	flex-wrap: wrap;	/*折り返す指定*/
+	justify-content: center;
 }
 
 /*１個あたりのボックス設定*/
